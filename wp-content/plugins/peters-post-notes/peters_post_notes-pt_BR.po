@@ -1,0 +1,134 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: peters_post_notes.php\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2011-08-13 11:50-0800\n"
+"PO-Revision-Date: \n"
+"Last-Translator: Peter <peter@keung.biz>\n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Poedit-Basepath: .\n"
+"X-Poedit-KeywordsList: __;_e\n"
+"X-Poedit-SearchPath-0: .\n"
+
+#: peters_post_notes.php:188
+msgid "User"
+msgstr ""
+
+#: peters_post_notes.php:199
+#, fuzzy
+msgid "Latest note"
+msgstr "Nota privada"
+
+#: peters_post_notes.php:213
+#: peters_post_notes.php:255
+#: peters_post_notes.php:420
+#: peters_post_notes.php:549
+msgid "M j, Y \\a\\t G:i"
+msgstr "j \\d\\e M \\d\\e Y \\à\\s G:i"
+
+#: peters_post_notes.php:229
+msgid "Notes"
+msgstr "Notas"
+
+#: peters_post_notes.php:261
+msgid "Edit"
+msgstr "Editar"
+
+#: peters_post_notes.php:266
+msgid "Delete"
+msgstr "Deletar"
+
+#: peters_post_notes.php:268
+#: peters_post_notes.php:560
+msgid "Save"
+msgstr "Salvar"
+
+#: peters_post_notes.php:269
+#: peters_post_notes.php:561
+msgid "Cancel"
+msgstr "Cancelar"
+
+#: peters_post_notes.php:281
+msgid "No notes for this post."
+msgstr "Nenhuma nota para este post."
+
+#: peters_post_notes.php:293
+#: peters_post_notes.php:490
+msgid "Add note:"
+msgstr "Adicionar nota:"
+
+#: peters_post_notes.php:348
+msgid "Collaboration Notes"
+msgstr "Notas Colaborativas"
+
+#: peters_post_notes.php:420
+msgid "on"
+msgstr ""
+
+#: peters_post_notes.php:428
+msgid "No relevant notes."
+msgstr "Nenhuma nota relevante."
+
+#: peters_post_notes.php:432
+msgid "General Notes"
+msgstr "Notas Gerais"
+
+#: peters_post_notes.php:485
+msgid "No general notes."
+msgstr "Nenhuma nota geral."
+
+#: peters_post_notes.php:492
+msgid "Private note"
+msgstr "Nota privada"
+
+#: peters_post_notes.php:493
+msgid "Add"
+msgstr "Adicionar"
+
+#: peters_post_notes.php:608
+msgid "<p>Added notes table!</p>"
+msgstr "<p>Adicionada tabela de notas!</p>"
+
+#: peters_post_notes.php:626
+msgid "<p>Added general notes table!</p>"
+msgstr "<p>Adicionada tabela de notas gerais!</p>"
+
+#: peters_post_notes.php:638
+msgid "Only necessary if you updated the plugin manually"
+msgstr "Somente necessário se o plugin for atualizado manualmente"
+
+#: peters_post_notes.php:647
+msgid "Peter's Post Notes: status"
+msgstr "Notas dos Post do Peter: status"
+
+#: peters_post_notes.php:648
+msgid "The only purpose of this settings page is to install the database tables when manually upgrading the plugin."
+msgstr "O único propósito desta página de configuração é para instalar os banco de dados quando o plugin for atualizado manualmente."
+
+#: peters_post_notes.php:651
+msgid "<p>Database tables for this plugin are properly installed.</p>"
+msgstr "<p>As tabelas deste plugin foram instaladas corretamente no banco de dados.</p>"
+
+#: peters_post_notes.php:663
+msgid "Peter's Post Notes"
+msgstr "Notas dos Post do Peter"
+
+#: peters_post_notes.php:728
+msgid "Error: You can only edit notes that you wrote."
+msgstr "Erro: Você só pode editar uma nota que você criou."
+
+#: peters_post_notes.php:749
+msgid "Error: Unknown or database problem when updating note."
+msgstr "Erro: Erro desconhecido ou problema no banco de dados ao atualizar a nota."
+
+#: peters_post_notes.php:786
+msgid "Error: You can only delete notes that you wrote."
+msgstr "Erro: Você só pode deletar uma nota que você criou."
+
+#: peters_post_notes.php:799
+msgid "Error: Unknown or database problem when deleting note."
+msgstr "Erro: Erro desconhecido ou problema no banco de dados ao deletar a nota."
+

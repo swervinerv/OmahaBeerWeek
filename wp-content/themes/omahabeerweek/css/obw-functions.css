@@ -1,0 +1,29 @@
+/* --- THEME FORCE EVENTS (CUSTOM POST TYPE) --- */
+
+/* Columns CPT Events */
+
+th#obw_col_ev_date, th#obw_col_ev_cat {width:150px}
+td.obw_col_ev_date em{color:gray;}
+th#obw_col_ev_times{width:150px}
+th#obw_col_ev_thumb{width:100px}
+
+th#obw_col_menu_order{width:60px}
+td.obw_col_menu_id{color:gray;text-align:right;}
+td.obw_col_menu_order{color:#219b38;text-align:right;}
+th#obw_col_menu_thumb{width:100px}
+td.obw_col_menu_thumb img{border:1px solid #d8d8d8}
+th#obw_col_menu_cat,th#obw_col_menu_title,th#obw_col_menu_size{width:150px}
+
+/* Metabox */
+
+.obw-meta { }
+.obw-meta .obwdate { width: 70px; }
+.obw-meta ul li { height: 20px; clear: both; margin: 0px; }
+.obw-meta ul li.textarea { height: 200px; }	
+.obw-meta ul li em { width: 200px; display:block; float:left; color:gray; margin-left:10px; padding-top: 6px}
+.obw-meta ul li img { display: inline-block; width:20px; height: 15px; cursor: pointer; }
+.obw-meta ul li input { width:300px; display:block; float:left; }
+.obw-meta ul li label { width: 200px; display:block; float:left; margin-top:10px; }
+.obw-meta ul li select { padding: 5px 0px 2px 0px; } 
+.obw-meta ul li select.hour { margin-left: 10px; }
+.obw-meta ul li textarea { width: 400px; height:180px; resize: none; display:block; float:left; }

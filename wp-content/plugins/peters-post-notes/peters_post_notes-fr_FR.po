@@ -1,0 +1,150 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: peters_post_notes\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2011-08-13 11:50-0800\n"
+"PO-Revision-Date: \n"
+"Last-Translator: Peter <peter@keung.biz>\n"
+"Language-Team: Denis Rebaud <denis@rebaud.fr>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Poedit-Language: French\n"
+"X-Poedit-Country: FRANCE\n"
+"X-Poedit-SourceCharset: iso-8859-1\n"
+"X-Poedit-Basepath: ./\n"
+"X-Poedit-KeywordsList: _;_e;__\n"
+"Plural-Forms: nplurals=2; plural=n>1;\n"
+"X-Poedit-SearchPath-0: .\n"
+
+#: peters_post_notes.php:188
+msgid "User"
+msgstr ""
+
+#: peters_post_notes.php:199
+#, fuzzy
+msgid "Latest note"
+msgstr "Note privée"
+
+#: peters_post_notes.php:213
+#: peters_post_notes.php:255
+#: peters_post_notes.php:420
+#: peters_post_notes.php:549
+msgid "M j, Y \\a\\t G:i"
+msgstr "j M Y  \\à G:i"
+
+#: peters_post_notes.php:229
+msgid "Notes"
+msgstr "Notes"
+
+#: peters_post_notes.php:261
+msgid "Edit"
+msgstr "Modifier"
+
+#: peters_post_notes.php:266
+msgid "Delete"
+msgstr "Supprimer"
+
+#: peters_post_notes.php:268
+#: peters_post_notes.php:560
+msgid "Save"
+msgstr "Enregistrer"
+
+#: peters_post_notes.php:269
+#: peters_post_notes.php:561
+msgid "Cancel"
+msgstr "Annuler"
+
+#: peters_post_notes.php:281
+msgid "No notes for this post."
+msgstr "Aucune note pour cet article."
+
+#: peters_post_notes.php:293
+#: peters_post_notes.php:490
+msgid "Add note:"
+msgstr "Ajouter une note :"
+
+#: peters_post_notes.php:348
+msgid "Collaboration Notes"
+msgstr "Notes collaboratives"
+
+#: peters_post_notes.php:420
+msgid "on"
+msgstr "dans"
+
+#: peters_post_notes.php:428
+msgid "No relevant notes."
+msgstr "Aucune note."
+
+#: peters_post_notes.php:432
+msgid "General Notes"
+msgstr "Notes générales"
+
+#: peters_post_notes.php:485
+msgid "No general notes."
+msgstr "Aucune note générale."
+
+#: peters_post_notes.php:492
+msgid "Private note"
+msgstr "Note privée"
+
+#: peters_post_notes.php:493
+msgid "Add"
+msgstr "Ajouter"
+
+#: peters_post_notes.php:608
+msgid "<p>Added notes table!</p>"
+msgstr "<p>Table des notes ajoutée !</p>"
+
+#: peters_post_notes.php:626
+msgid "<p>Added general notes table!</p>"
+msgstr "<p>Table des notes générales ajoutée !</p>"
+
+#: peters_post_notes.php:638
+msgid "Only necessary if you updated the plugin manually"
+msgstr "Seulement nécessaire si vous mettez manuellement à jour l’extension"
+
+#: peters_post_notes.php:647
+msgid "Peter's Post Notes: status"
+msgstr "Peter's Post Notes : état"
+
+#: peters_post_notes.php:648
+msgid "The only purpose of this settings page is to install the database tables when manually upgrading the plugin."
+msgstr "L’unique objet de cette page de paramétrage est d’installer les tables dans la base de données lors de la mise à jour manuelle de l’extension."
+
+#: peters_post_notes.php:651
+msgid "<p>Database tables for this plugin are properly installed.</p>"
+msgstr "<p>Les tables pour cette extension ont été correctement installées dans la base de données.</p>"
+
+#: peters_post_notes.php:663
+msgid "Peter's Post Notes"
+msgstr "Peter's Post Notes"
+
+#: peters_post_notes.php:728
+msgid "Error: You can only edit notes that you wrote."
+msgstr "Erreur : vous ne pouvez modifier que les notes dont vous êtes l’auteur."
+
+#: peters_post_notes.php:749
+msgid "Error: Unknown or database problem when updating note."
+msgstr "Erreur : un problème inconnu ou lié à la base de données a été rencontré pendant la mise à jour de la note."
+
+#: peters_post_notes.php:786
+msgid "Error: You can only delete notes that you wrote."
+msgstr "Erreur : vous ne pouvez supprimer que les notes dont vous êtes l’auteur."
+
+#: peters_post_notes.php:799
+msgid "Error: Unknown or database problem when deleting note."
+msgstr "Erreur : un problème inconnu ou lié à la base de données a été rencontré pendant la suppression de la note."
+
+#~ msgid "M j, Y"
+#~ msgstr "j M Y"
+
+#~ msgid "at"
+#~ msgstr "à"
+
+#~ msgid "G:i"
+#~ msgstr "G:i"
+
+#, fuzzy
+#~ msgid "M j, Y \\\\a\\\\t G:i"
+#~ msgstr "j M Y  \\à G:i"

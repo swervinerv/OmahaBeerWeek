@@ -1,0 +1,918 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"pad",
+				"padding"
+			],
+			[
+				"sc",
+				"scrollToEvent"
+			],
+			[
+				"SCR",
+				"scrollToEvent"
+			],
+			[
+				"out",
+				"outerHeight"
+			],
+			[
+				"scrollt",
+				"scrollToEvent"
+			],
+			[
+				"text",
+				"text-decoration"
+			],
+			[
+				"her",
+				"heroic_condensedbold"
+			],
+			[
+				"event",
+				"event-detail"
+			],
+			[
+				"autho",
+				"authorId"
+			],
+			[
+				"home",
+				"home_images_index"
+			],
+			[
+				"qu",
+				"query_args"
+			],
+			[
+				"even",
+				"events-header"
+			],
+			[
+				"scr",
+				"scrollTop"
+			],
+			[
+				"pre",
+				"previousClassName"
+			],
+			[
+				"wid",
+				"width"
+			],
+			[
+				"evn",
+				"events"
+			],
+			[
+				"classn",
+				"className"
+			],
+			[
+				"eve",
+				"event_title"
+			],
+			[
+				"padin",
+				"padding-top"
+			],
+			[
+				"ba",
+				"background"
+			],
+			[
+				"padd",
+				"padding-top"
+			],
+			[
+				"DATE",
+				"date"
+			],
+			[
+				"font",
+				"font-style"
+			],
+			[
+				"sa",
+				"sans-serif"
+			],
+			[
+				"back",
+				"background-position"
+			],
+			[
+				"margi",
+				"margin-top"
+			],
+			[
+				"mari",
+				"margin-top"
+			],
+			[
+				"cne",
+				"content"
+			],
+			[
+				"inlin",
+				"inline-block"
+			],
+			[
+				"inli",
+				"inline-block"
+			],
+			[
+				"list-sty",
+				"list-style-type"
+			],
+			[
+				"LOR",
+				"LORENZO"
+			],
+			[
+				"enque",
+				"enqueue_test_scripts"
+			],
+			[
+				"dat",
+				"dateLastAdded"
+			],
+			[
+				"upa",
+				"updatedRating"
+			],
+			[
+				"update",
+				"updatedRating"
+			],
+			[
+				"up",
+				"updatedTotalRatings"
+			],
+			[
+				"new",
+				"newRating"
+			],
+			[
+				"updat",
+				"updatedTotalRatings"
+			],
+			[
+				"tota",
+				"totalRatings"
+			],
+			[
+				"ra",
+				"rating"
+			],
+			[
+				"find",
+				"findById"
+			],
+			[
+				"cont",
+				"contestDoc"
+			],
+			[
+				"ne",
+				"newContest"
+			],
+			[
+				"upload",
+				"uploadImageName"
+			],
+			[
+				"contet",
+				"contestIds"
+			],
+			[
+				"USER",
+				"userDoc"
+			],
+			[
+				"con",
+				"contest"
+			],
+			[
+				"NEW",
+				"newUser"
+			],
+			[
+				"user",
+				"user"
+			],
+			[
+				"obw_eve",
+				"obw_events_desc"
+			],
+			[
+				"obw_events",
+				"obw_events_startdate"
+			],
+			[
+				"margin",
+				"margin-left"
+			],
+			[
+				"op",
+				"option	Tag"
+			],
+			[
+				"mar",
+				"margin-top"
+			]
+		]
+	},
+	"buffers":
+	[
+		{
+			"file": "/Users/evanjohnston/Sites/omahabeerweek/.htaccess",
+			"settings":
+			{
+				"buffer_size": 291,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "/Users/evanjohnston/Sites/omahabeerweek/wp-content/themes/omahabeerweek/page-events.php",
+			"settings":
+			{
+				"buffer_size": 4052,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "/Users/evanjohnston/Sites/omahabeerweek/wp-content/themes/omahabeerweek/index.php",
+			"settings":
+			{
+				"buffer_size": 2097,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "/Users/evanjohnston/Sites/omahabeerweek/wp-content/themes/omahabeerweek/header.php",
+			"settings":
+			{
+				"buffer_size": 2810,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "/Users/evanjohnston/Development/PhenomblueV8/cms/wp-content/themes/phenomblue/functions.php",
+			"settings":
+			{
+				"buffer_size": 6178,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "_page.scss",
+			"settings":
+			{
+				"buffer_size": 10704,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "_media.scss",
+			"settings":
+			{
+				"buffer_size": 3084,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"contents": "(function ($) {\n	$(function () {\n		var austDay = new Date('February 15, 2013 00:00:00');\n		$('#countdown').countdown({until: austDay});\n\n		var scrollToEvent = 0;\n\n		if (IS_MOBILE) {\n			$('#home').css({\n				'background-image': 'url(\"' + $('#home-image', '#home').attr('src') + '\")'\n			});\n\n			$('#home-image', '#home').remove();\n			$('#home').show();\n		}\n		else {\n			$('#home-image', '#home').load(function() {\n				$('#home').css({\n					'background-image': 'url(\"' + $(this).attr('src') + '\")'\n				});\n\n				$(this).remove();\n\n				$('#home').delay(200).fadeIn();\n			});\n		}\n\n		$('#branding nav a').click(function () {\n			$('#branding nav a.selected').removeClass('selected');\n\n			if (!$(this).hasClass('title')) {\n				$(this).addClass('selected');\n			}\n		});\n\n		$('div#all-events a').click(function (e) {\n			e.preventDefault();\n\n			if ($(this).hasClass('title')) {\n				if ($(this).hasClass('open')) {\n					$(this).removeClass('open');\n\n					$('div#all-events').animate({\n						height: '-=230'\n					}, 250);\n				}\n				else {\n					$(this).addClass('open');\n					\n					$('div#all-events').animate({\n						height: '+=230'\n					}, 250);\n				}\n\n				return;\n			}\n\n			// scroll date into view\n			if ($('#events #' + $(this).data('id')).length !== 0) {\n				$('html, body').animate({\n					scrollTop: $('#events #' + $(this).data('id')).offset().top\n				}, 1000);\n\n				$('div#all-events a.open').removeClass('open');\n				$('div#all-events').animate({\n					height: '-=230'\n				}, 250);\n			}\n			else {\n				scrollToEvent = $(this).data('id');\n\n				$.address.value('/events');\n			}\n		});\n\n		$(window).scroll(function () {\n			if ($('#events').length !== 0) {\n				// console.log($(window).scrollTop() -  $('#branding').height());\n				if ($(window).scrollTop() > $(window).height() / 2) {\n					if (!$('div#home div').first().is(':animated') && $('div#home div').first().css('display') !== 'none') {\n						//TODO: stop countdown\n						$('div#home div').fadeOut();\n					}\n				}\n				else {\n					if (!$('div#home div').first().is(':animated') && $('div#home div').first().css('display') !== 'block') {\n						//TODO: restart countdown\n						$('div#home div').fadeIn();\n					}	\n				}\n\n				if (($(window).height() - $(window).scrollTop() - $('#branding').outerHeight()) < 0) {\n				// if (($(window).height() - $(window).scrollTop()) < 0) {\n					$('header#events-header', $('#events')).css({\n						'position': 'fixed',\n						'top': $('#branding').height().toString() + 'px'\n					});\n\n					if (!$('#branding a[href=\"#/events\"]').hasClass('selected')) {\n						$('#branding a[href=\"#/events\"]').addClass('selected');\n					}\n\n					$('section', '#events').each(function() {\n						if ($(this).attr('id') === '16') {\n							// console.log(Math.floor($(this).offset().top));\n							// console.log($(window).scrollTop());\n						}\n\n						// console.log(Math.floor($(this).offset().top) - $(window).scrollTop() - $('#branding').height() - $('#events-header').height());\n\n						// if (Math.round($(this).offset().top) - $(window).scrollTop() - $('#branding').height() === 0) {\n						// 	alert('bitches');\n						// }\n						// if ($(this).offset().top - $(window).scrollTop() - $(window).height() < 0) {\n						// 	console.log($(this).attr('id') +': ' + $(this).offset().top);\n						// }\n					});\n				}\n				else {\n					$('header#events-header', $('#events')).css({\n						'position': 'absolute',\n						'top': '0px'\n					});\n\n					$('#branding a[href=\"#/events\"]').removeClass('selected');\n				}\n			}\n		});\n\n		$.address.init(function(event) {\n			//TODO: anything?\n        }).change(function(event) {\n        	var className = '',\n        		url = '';\n\n        	var previousClassName = $('div#content').attr('class');\n\n            switch (event.value) {\n            	case '/events':\n            		if ($('div.events', \"#main\").length === 0) {\n            			className = 'events';\n            			url = ROOT + '?page_id=248';\n            		}\n            		else {\n	           //  		$('html, body').animate({\n			        	// 	'scrollTop': $(window).innerHeight() - $('#branding').height()\n			        	// }, 750);\n\n			        	$('html, body').animate({\n			        		'scrollTop': $('div.events').offset().top - $('#branding').height()\n			        	}, 750);\n	            	}\n\n            		break;\n\n            	case '/about':\n            		className = 'about';\n            		url = ROOT + '?page_id=223';\n\n            		break;\n\n        		case '/bars':\n        			className = 'bars';\n            		url = ROOT + '?page_id=243';\n\n            		break;\n\n        		case '/breweries':\n        			className = 'breweries';\n            		url = ROOT + '?page_id=245';\n\n            		break;\n\n            	case '/faq':\n            		className = 'faq';\n            		url = ROOT + '?page_id=219';\n\n            		break;\n\n            	case '/tours':\n            		className = 'tours';\n            		url = ROOT + '?page_id=235';\n\n            		break;\n\n            	default:\n            		break;\n            }\n\n	        if (className.length > 0 && !$('a[href=\"#/' + className + '\"]').hasClass('selected')) {\n	        	$('a[href=\"#/' + className + '\"]').addClass('selected');\n	        }\n\n	        if (url.length > 0) {\n				trackPageView(event.value);\n	        }\n\n            getContent(url, previousClassName);\n        });\n\n		$(window).resize(function() {\n			updateMinSize();\n		});\n\n		function getContent (url, previousClassName) {\n			if (url.length > 0) {\n				$.get(url, function(result) {\n					var newContent = $(result);\n\n					if ($('#events', newContent).length > 0) {\n			            $('section', newContent).css('min-height', $(window).innerHeight().toString() + 'px');\n			        }\n\n			        $(document).trigger('page_animating', this);\n\n	            	if (newContent.hasClass('events')) {\n	            		$('#main').append(newContent);\n\n	            		var newScrollTop = $(window).innerHeight() - $('#branding').outerHeight();\n\n	            		if (scrollToEvent !== 0) {\n	            			newScrollTop = $('#events #' + scrollToEvent).offset().top;\n\n							scrollToEvent = 0;\n	            		}\n\n						$('html, body').animate({\n			        		'scrollTop': newScrollTop\n						}, 750, function() {\n							$('div.' + previousClassName, \"#main\").remove();\n						});\n	            	}\n	            	else {\n	            		newContent.css({\n		            		'position': 'fixed',\n		            		'top': $(window).innerHeight().toString() + 'px',\n		            		'z-index': 2\n		            	});\n\n						$('#wrapper').append(newContent);\n\n						if (previousClassName !== 'events') {\n							$('div.' + previousClassName, \"#main\").animate({\n								top: -($('div.' + previousClassName, \"#main\").height())\n							}, 1150);\n						}\n						else {\n							//TODO: figure out a cool way to do this animation\n							// $('div.' + previousClassName, \"#main\").animate({\n							// 	top: 0\n							// }, 900);	\n						}\n\n						newContent.animate({\n							top: 0\n						}, 750, function() {\n							// reset scroll top\n							$(window).scrollTop(0);\n\n							// remove old div\n							$('div.' + previousClassName, \"#main\").remove();\n\n							if ($(this).outerHeight() < $('div.page-content', $(this)).outerHeight()) {\n								$(this).css({\n									'min-height': $('div.page-content', $(this)).outerHeight().toString() + 'px'\n								});\n							}\n\n							$('header', $(this)).css({\n								'top': '0px'\n							});\n\n							$(this).css({\n								'position': 'relative',\n		            			'z-index': 0\n							})\n						});\n					}\n	            }, 'html');\n			}\n		}\n\n		function trackPageView(page) {\n			if (typeof _gaq !== 'undefined') {\n				_gaq.push(['_trackPageview', page]);\n			}\n		}\n\n		function updateMinSize() {\n			if ($('#events').length > 0) {\n	            $('section', '#events').css('min-height', ($(window).innerHeight() - $('#branding').outerHeight()).toString() + 'px');\n	        }\n		}\n\n		updateMinSize();\n	});\n})(jQuery);",
+			"file": "/Users/evanjohnston/Sites/omahabeerweek/wp-content/themes/omahabeerweek/js/script.js",
+			"file_size": 7811,
+			"file_write_time": 1354545612000000,
+			"settings":
+			{
+				"buffer_size": 7812,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "/Users/evanjohnston/Sites/omahabeerweek/wp-content/themes/omahabeerweek/footer.php",
+			"settings":
+			{
+				"buffer_size": 836,
+				"line_ending": "Unix"
+			}
+		}
+	],
+	"build_system": "",
+	"command_palette":
+	{
+		"height": 375.0,
+		"selected_items":
+		[
+			[
+				"edi",
+				"Shopify: Edit asset"
+			],
+			[
+				"shop",
+				"Shopify: Edit asset"
+			],
+			[
+				"sho",
+				"Shopify: Choose store"
+			],
+			[
+				"Sho",
+				"Shopify: Edit asset"
+			],
+			[
+				"",
+				"Set Syntax: HTML"
+			],
+			[
+				"Snippet: ",
+				"Snippet: html"
+			],
+			[
+				"Package Control: ",
+				"Package Control: Install Package"
+			]
+		],
+		"width": 561.0
+	},
+	"console":
+	{
+		"height": 146.0
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"file_history":
+	[
+		"/Users/evanjohnston/Sites/omahabeerweek/wp-content/themes/omahabeerweek/stylesheets/style.css",
+		"/Users/evanjohnston/Development/PhenomblueV8/cms/wp-content/themes/phenomblue/header.php",
+		"/Users/evanjohnston/Sites/omahabeerweek/wp-content/themes/omahabeerweek/functions.php",
+		"/Users/evanjohnston/Sites/omahabeerweek/wp-includes/plugin.php",
+		"/Users/evanjohnston/Desktop/Omaha Beer Week Admin Password.txt",
+		"/private/etc/apache2/httpd.conf",
+		"/Users/evanjohnston/Sites/omahabeerweek/wp-content/themes/omahabeerweek/header.php",
+		"/Users/evanjohnston/Sites/omahabeerweek/wp-content/themes/omahabeerweek/page-breweries.php",
+		"/Users/evanjohnston/Sites/omahabeerweek/wp-content/themes/omahabeerweek/page-bars.php",
+		"/Users/evanjohnston/Sites/omahabeerweek/wp-content/themes/omahabeerweek/sass/partials/_fonts.scss",
+		"/Users/evanjohnston/Sites/omahabeerweek/wp-content/themes/omahabeerweek/css/obw-functions.css",
+		"/Users/evanjohnston/Sites/omahabeerweek/wp-content/themes/omahabeerweek/content-event.php",
+		"/Users/evanjohnston/Library/Application Support/Sublime Text 2/Packages/User/Preferences.sublime-settings",
+		"/Users/evanjohnston/Sites/omahabeerweek/wp-content/themes/omahabeerweek/index.php",
+		"/Users/evanjohnston/Sites/omahabeerweek/wp-content/themes/omahabeerweek/fonts/fonts.css",
+		"/Users/evanjohnston/Sites/omahabeerweek/wp-content/themes/omahabeerweek/page-home.php",
+		"/Users/evanjohnston/Sites/omahabeerweek/wp-content/themes/omahabeerweek/style.css",
+		"/Users/evanjohnston/Development/Look/cms/wp-content/themes/look/header.php",
+		"/Users/evanjohnston/Development/Look/cms/wp-content/themes/look/functions.php",
+		"/Users/evanjohnston/Sites/omahabeerweek/wp-content/themes/twentyeleven/content.php",
+		"/Users/evanjohnston/Desktop/EventsMeetingNotes",
+		"/Users/evanjohnston/Sites/omahabeerweek/wp-content/themes/twentyeleven/index.php",
+		"/Users/evanjohnston/Library/Application Support/Sublime Text 2/Packages/Shopify/cache/marks-pacocha3281/3655412/templates/page.liquid",
+		"/Users/evanjohnston/Desktop/Shopify Storefront Password",
+		"/Users/evanjohnston/Library/Application Support/Sublime Text 2/Packages/Shopify/cache/marks-pacocha3281/3655412/layout/theme.liquid",
+		"/Users/evanjohnston/Library/Application Support/Sublime Text 2/Packages/User/ShopifyStores.json",
+		"/Users/evanjohnston/Library/Application Support/Sublime Text 2/Packages/Shopify/Shopify.sublime-commands",
+		"/Users/evanjohnston/Library/Application Support/Sublime Text 2/Packages/Shopify/CSS.sublime-settings",
+		"/Users/evanjohnston/Library/Application Support/Sublime Text 2/Packages/Shopify/README.md",
+		"/Users/evanjohnston/Sites/Look/php.ini",
+		"/Users/evanjohnston/Sites/Memsee/js/script.js",
+		"/Users/evanjohnston/Sites/omahabeerweek/wp-config.php",
+		"/Users/evanjohnston/Sites/omahabeerweek/wp-content/themes/omahabeerweek/page-faq.php",
+		"/Users/evanjohnston/Sites/omahabeerweek/wp-content/themes/omahabeerweek/page-about.php",
+		"/Users/evanjohnston/Sites/omahabeerweek/wp-content/themes/omahabeerweek/page-bus-tours.php",
+		"/Users/evanjohnston/Sites/omahabeerweek/.htaccess",
+		"/Volumes/BOOTCAMP/Users/ejohnston/Downloads/webfontkit-20121120-122126/stylesheet.css",
+		"/Users/evanjohnston/Downloads/jquery.countdown.package-1.6.0/jquery.countdown.js",
+		"/Users/evanjohnston/Sites/omahabeerweek/wp-content/themes/omahabeerweek/includes/initialize.php",
+		"/Users/evanjohnston/Sites/omahabeerweek/wp-content/themes/omahabeerweek/footer.php",
+		"/Users/evanjohnston/Sites/omahabeerweek/wp-content/themes/twentyeleven/header.php",
+		"/Users/evanjohnston/Sites/omahabeerweek/wp-content/themes/twentyeleven/style.css",
+		"/Users/evanjohnston/Development/PhenomblueV8/cms/wp-content/themes/phenomblue/js/approach.js",
+		"/Users/evanjohnston/Sites/omahabeerweek/wp-content/themes/omahabeerweek/js/showcase.js",
+		"/Users/evanjohnston/Sites/omahabeerweek/wp-content/themes/omahabeerweek/css/jquery-ui-1.8.9.custom.css",
+		"/Users/evanjohnston/Sites/omahabeerweek/wp-content/themes/omahabeerweek/content.php",
+		"/Users/evanjohnston/Desktop/uninstall_mono.sh",
+		"/Users/evanjohnston/Downloads/full_site/index.html",
+		"/Users/evanjohnston/Sites/omahabeerweek/wp-content/themes/omahabeerweek/css/obw.css",
+		"/Users/evanjohnston/Sites/omahabeerweek/wp-content/themes/omahabeerweek/js/events.js",
+		"/Users/evanjohnston/Sites/omahabeerweek/wp-includes/widgets.php",
+		"/Users/evanjohnston/Sites/omahabeerweek/wp-content/themes/twentyeleven copy/functions.php",
+		"/Users/evanjohnston/Sites/omahabeerweek/wp-content/themes/twentyeleven copy/index.php",
+		"/Users/evanjohnston/Sites/omahabeerweek/wp-content/themes/omahabeerweek/page-test.php",
+		"/Users/evanjohnston/Sites/Memsee/css/index.css",
+		"/Users/evanjohnston/Sites/Memsee/index.html",
+		"/Users/evanjohnston/Sites/omahabeerweek/wp-content/plugins/peters-post-notes/peters_post_notes.php",
+		"/Users/evanjohnston/Development/Page/iOS/Page/Page/Data/data.json",
+		"/Users/evanjohnston/Sites/Memsee/css/js/script.js",
+		"/Users/evanjohnston/Development/Page/iOS/Page/Page/Data/noah.html",
+		"/Users/evanjohnston/Development/Page/iOS/Page/Page/Data/vulgate.html",
+		"/Users/evanjohnston/Development/Page/iOS/Page/Page/Data/piero_i.html",
+		"/Users/evanjohnston/Development/Page/iOS/Page/Page/Data/lorenzo_elder.html",
+		"/Users/evanjohnston/Development/Page/iOS/Page/Page/Data/lorenzo.html",
+		"/Users/evanjohnston/Development/Page/iOS/Page/Page/Data/joshua.html",
+		"/Users/evanjohnston/Development/Page/iOS/Page/Page/Data/moses.html",
+		"/Users/evanjohnston/Development/Page/iOS/Page/Page/Data/esau_jacob.html",
+		"/Users/evanjohnston/Development/Page/iOS/Page/Page/Data/abraham.html",
+		"/Users/evanjohnston/Development/Page/iOS/Page/Page/Data/joseph.html",
+		"/Users/evanjohnston/Desktop/Page/HTML/noah.html",
+		"/Users/evanjohnston/Development/Page/WPF/Page.Server/server.js",
+		"/Users/evanjohnston/Desktop/Page/HTML/peirfranceso.html",
+		"/Users/evanjohnston/Desktop/Page/HTML/jerome_lion.html",
+		"/Users/evanjohnston/Desktop/Page/HTML/psalm45.html",
+		"/Users/evanjohnston/Desktop/Page/HTML/vulgate.html",
+		"/Users/evanjohnston/Desktop/Page/HTML/lorenzo",
+		"/Users/evanjohnston/Desktop/Page/HTML/joseph",
+		"/Users/evanjohnston/Development/BullsEye/BullsEye.html",
+		"/Users/evanjohnston/Sites/omahabeerweek/wp-admin/css/wp-admin.css",
+		"/Users/evanjohnston/Development/Mantastic/API/routes/contest.js",
+		"/Users/evanjohnston/Development/Mantastic/API/routes/index.js",
+		"/Users/evanjohnston/Sites/mantastic/routes/photo.js",
+		"/Users/evanjohnston/Sites/mantastic/routes/contest.js",
+		"/Users/evanjohnston/Sites/mantastic/models/contest.js",
+		"/Users/evanjohnston/Sites/mantastic/models/user.js",
+		"/Users/evanjohnston/Sites/mantastic/models/photo.js",
+		"/Users/evanjohnston/Sites/manatastic/routes/photo.js",
+		"/Users/evanjohnston/Sites/manatastic/models/photo.js",
+		"/Users/evanjohnston/Sites/manatastic/routes/contest.js",
+		"/Users/evanjohnston/Sites/manatastic/models/contest.js",
+		"/Users/evanjohnston/Sites/manatastic/routes/user.js",
+		"/Users/evanjohnston/Sites/manatastic/models/user.js",
+		"/Users/evanjohnston/Sites/manatastic/app.js",
+		"/Users/evanjohnston/Sites/manatastic/package.json",
+		"/Users/evanjohnston/Sites/manatastic/data_models.json",
+		"/Users/evanjohnston/Sites/manatastic/routes/feed.js",
+		"/Users/evanjohnston/.bash_profile",
+		"/Users/evanjohnston/.profile",
+		"/usr/local/lib/node_modules/mongodb/Readme.md",
+		"/private/etc/paths",
+		"/Users/evanjohnston/Downloads/NoelTock_Events_CustomPostType/Pt 1 (Backend)/cpt-events.php",
+		"/Users/evanjohnston/Sites/omahabeerweek/wp-content/themes/omahabeerweek/js/pubforce-admin.js",
+		"/Users/evanjohnston/Sites/manatastic/routes/index.js",
+		"/Users/evanjohnston/Sites/omahabeerweek/wp-content/themes/omahabeerweek/Profile/profile.php",
+		"/Users/evanjohnston/Desktop/random_thought",
+		"/Users/evanjohnston/Downloads/NoelTock_Events_CustomPostType/Pt 1 (Backend)/js/pubforce-admin.js",
+		"/Users/evanjohnston/Sites/omahabeerweek/wp-admin/css/obw-functions.css",
+		"/Users/evanjohnston/Downloads/NoelTock_Events_CustomPostType 2/Pt 1 (Backend)/cpt-events.php",
+		"/Users/evanjohnston/Sites/omahabeerweek/wp-content/themes/omahabeerweek/editor-style.css",
+		"/Users/evanjohnston/Sites/omahabeerweek/wp-content/themes/omahabeerweek/rtl.css",
+		"/Users/evanjohnston/Sites/omahabeerweek/wp-content/themes/omahabeerweek/editor-style-rtl.css",
+		"/Users/evanjohnston/Desktop/Page/data.json",
+		"/Users/evanjohnston/Desktop/Sig Reserver III Socket Events",
+		"/Users/evanjohnston/Development/Page/WPF/Page.Server/index.html",
+		"/Users/evanjohnston/Development/Page/WPF/Page.Projector/Code/SocketIOHelper.cs",
+		"/Users/evanjohnston/Downloads/Custom_Profile/Profile/profile.php",
+		"/Users/evanjohnston/Sites/Vulcan/player.html",
+		"/Users/evanjohnston/Development/Page/Website/index.html",
+		"/Users/evanjohnston/Development/Page/Website/node_modules/socket.io/lib/socket.io.js",
+		"/Users/evanjohnston/Sites/Vulcan/vulcan_server.js",
+		"/Users/evanjohnston/Downloads/samvermette-SVProgressHUD-07307d5/README.textile",
+		"/Volumes/BOOTCAMP/source_control/Phenomblue/Phenomblue.com/PhenomblueV8/cms/wp-config.php",
+		"/Users/evanjohnston/Development/iOS/vuforia-sdk-ios-1-5-9/build/include/QCAR/Tool.h",
+		"/Users/evanjohnston/Downloads/wordpress/wp-config.php"
+	],
+	"find":
+	{
+		"height": 37.0
+	},
+	"find_in_files":
+	{
+		"height": 0.0,
+		"where_history":
+		[
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"().'</",
+			"twenty",
+			"mobile",
+			"AllowOverride",
+			"())",
+			"updateMin",
+			"#events",
+			"after",
+			"div.bars",
+			"$author_id",
+			";\n",
+			"width",
+			"'';\n",
+			"fadeIn",
+			"url('images",
+			"url('",
+			"\n            	",
+			");\n",
+			");",
+			"{\n",
+			"content",
+			">';\n",
+			"obw_events_startdate",
+			"top",
+			"info",
+			"clear",
+			"f0e",
+			"all_with_meta",
+			"\n	'fields' => 'all_with_meta',",
+			"5px",
+			"copy\n",
+			";\n",
+			"font-size",
+			"float",
+			"28px",
+			"7",
+			"nav",
+			"header",
+			"filter_event_list",
+			"filter_events_list",
+			"filter_posts_list",
+			"media",
+			"<br",
+			"br",
+			"28px",
+			"contact",
+			"main",
+			"content",
+			"nav",
+			"background-home",
+			"header",
+			"obw_",
+			"center",
+			"user_role",
+			"Read",
+			"wp_enqueue_script",
+			"post",
+			",\n",
+			"map_meta_cap",
+			"dateLastPhotoAdded",
+			"}\n",
+			"userQuery",
+			"users",
+			"{\n",
+			", ",
+			"photos",
+			";\n",
+			"rating",
+			"newRating",
+			"files",
+			";\n",
+			"dateStart",
+			"};",
+			"Contest",
+			");\n",
+			"newUser",
+			"());\n",
+			">\n",
+			"obw_events_end_date_ampm",
+			"obw_events_start_date_hour",
+			"tf",
+			"postbox",
+			"line-height: 15px",
+			"300",
+			"obw_events_startdate",
+			"\"",
+			"obw_col_ev_sponsor",
+			"255, "
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+			"div.breweries",
+			"$query_author_id",
+			"url('../images",
+			"url('../fonts/",
+			"url('../../fonts/",
+			"Photo",
+			"obw",
+			"'"
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"selected": 7,
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"file": "/Users/evanjohnston/Sites/omahabeerweek/.htaccess",
+					"settings":
+					{
+						"buffer_size": 291,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								158,
+								158
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Text/Plain text.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "/Users/evanjohnston/Sites/omahabeerweek/wp-content/themes/omahabeerweek/page-events.php",
+					"settings":
+					{
+						"buffer_size": 4052,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								975,
+								975
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/PHP/PHP.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 490.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "/Users/evanjohnston/Sites/omahabeerweek/wp-content/themes/omahabeerweek/index.php",
+					"settings":
+					{
+						"buffer_size": 2097,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1979,
+								1979
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/PHP/PHP.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 510.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"file": "/Users/evanjohnston/Sites/omahabeerweek/wp-content/themes/omahabeerweek/header.php",
+					"settings":
+					{
+						"buffer_size": 2810,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								749,
+								749
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/PHP/PHP.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 4,
+					"file": "/Users/evanjohnston/Development/PhenomblueV8/cms/wp-content/themes/phenomblue/functions.php",
+					"settings":
+					{
+						"buffer_size": 6178,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								5697,
+								5697
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/PHP/PHP.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 2533.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 5,
+					"file": "_page.scss",
+					"settings":
+					{
+						"buffer_size": 10704,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1310,
+								1310
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Sass/Syntaxes/Sass.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 6,
+					"file": "_media.scss",
+					"settings":
+					{
+						"buffer_size": 3084,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								2003,
+								2003
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Sass/Syntaxes/Sass.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 1248.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 7,
+					"file": "/Users/evanjohnston/Sites/omahabeerweek/wp-content/themes/omahabeerweek/js/script.js",
+					"settings":
+					{
+						"buffer_size": 7812,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								6347,
+								6347
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 3346.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 8,
+					"file": "/Users/evanjohnston/Sites/omahabeerweek/wp-content/themes/omahabeerweek/footer.php",
+					"settings":
+					{
+						"buffer_size": 836,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								809,
+								809
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/PHP/PHP.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				}
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 0.0
+	},
+	"input":
+	{
+		"height": 0.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"replace":
+	{
+		"height": 66.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"show_minimap": true,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 204.0,
+	"status_bar_visible": true
+}
