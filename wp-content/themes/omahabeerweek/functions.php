@@ -433,9 +433,9 @@ function events_scripts() {
     if( 'obw_events' != $post_type )
     	return;
 	
-    wp_enqueue_script('jquery-ui', get_bloginfo('template_url') . '/js/jquery-ui-1.8.9.custom.min.js', array('jquery'));
-    wp_enqueue_script('ui-datepicker', get_bloginfo('template_url') . '/js/jquery.ui.datepicker.js');
-    wp_enqueue_script('custom_script', get_bloginfo('template_url').'/js/pubforce-admin.js', array('jquery'));
+    wp_enqueue_script('jquery-ui', get_bloginfo('template_url') . '/js/lib/jquery-ui-1.8.9.custom.min.js', array('jquery'));
+    wp_enqueue_script('ui-datepicker', get_bloginfo('template_url') . '/js/lib/jquery.ui.datepicker.js');
+    wp_enqueue_script('custom_script', get_bloginfo('template_url').'/js/lib/pubforce-admin.js', array('jquery'));
 }
 
 add_action( 'admin_print_styles-post.php', 'events_styles', 1000 );	

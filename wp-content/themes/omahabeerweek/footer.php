@@ -11,7 +11,10 @@
 ?>
 	</div><!-- #main -->
 
-	<script src="<?php echo get_template_directory_uri(); ?>/js/script.js?v=1.3" type="text/javascript"></script>
+	<!--<script src="<?php echo get_template_directory_uri(); ?>/js/script.js?v=1.3" type="text/javascript"></script>-->
+	<script src="//ajax.googleapis.com/ajax/libs/angularjs/1.0.7/angular.min.js"></script>
+	<script src="<?php echo get_template_directory_uri(); ?>/js/app.js" type="text/javascript"></script>
+	<script src="<?php echo get_template_directory_uri(); ?>/js/controllers/events.controller.js" type="text/javascript"></script>
 	<script type="text/javascript">
 	  var _gaq = _gaq || [];
 	  _gaq.push(['_setAccount', 'UA-36674375-1']);
