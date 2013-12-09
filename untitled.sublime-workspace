@@ -1,0 +1,1119 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"clean",
+				"clean_st"
+			],
+			[
+				"fun",
+				"function"
+			],
+			[
+				"dis",
+				"disc"
+			],
+			[
+				"page",
+				"page-content"
+			],
+			[
+				"sel",
+				"selectedPageText"
+			],
+			[
+				"SELE",
+				"selectedPageText"
+			],
+			[
+				"see",
+				"selectedPageText"
+			],
+			[
+				"sele",
+				"selectedPageText"
+			],
+			[
+				"selectedp",
+				"selectedPageText"
+			],
+			[
+				"CLA",
+				"className"
+			],
+			[
+				"padin",
+				"padding"
+			],
+			[
+				"back",
+				"background-size"
+			],
+			[
+				"event",
+				"event-detail"
+			],
+			[
+				"is_",
+				"IS_TABLET"
+			],
+			[
+				"isTab",
+				"isTablet"
+			],
+			[
+				"show",
+				"showEventsAuthorId"
+			],
+			[
+				"sho",
+				"showEventsAuthorId"
+			],
+			[
+				"pad",
+				"padding-top"
+			],
+			[
+				"inline",
+				"inline-block"
+			],
+			[
+				"pading",
+				"padding-right"
+			],
+			[
+				"backgrou",
+				"background-size"
+			],
+			[
+				"margin",
+				"margin-bottom"
+			],
+			[
+				"is",
+				"is_mobile_device"
+			],
+			[
+				"prev",
+				"previousClassName"
+			],
+			[
+				"scro",
+				"scrollToEvent"
+			],
+			[
+				"animat",
+				"animated"
+			],
+			[
+				"he",
+				"header"
+			],
+			[
+				"paddin",
+				"padding-top"
+			],
+			[
+				"pos",
+				"position"
+			],
+			[
+				"obw_ev",
+				"obw_events_startdate_day"
+			],
+			[
+				"PADI",
+				"padding-top"
+			],
+			[
+				"iS",
+				"IS_MOBILE"
+			],
+			[
+				"padd",
+				"padding"
+			],
+			[
+				"bac",
+				"background-size"
+			],
+			[
+				"ine",
+				"inline-block"
+			],
+			[
+				"scrol",
+				"scrollTop"
+			],
+			[
+				"sc",
+				"scrollToEvent"
+			],
+			[
+				"SCR",
+				"scrollToEvent"
+			],
+			[
+				"out",
+				"outerHeight"
+			],
+			[
+				"scrollt",
+				"scrollToEvent"
+			],
+			[
+				"text",
+				"text-decoration"
+			],
+			[
+				"her",
+				"heroic_condensedbold"
+			],
+			[
+				"autho",
+				"authorId"
+			],
+			[
+				"home",
+				"home_images_index"
+			],
+			[
+				"qu",
+				"query_args"
+			],
+			[
+				"even",
+				"events-header"
+			],
+			[
+				"scr",
+				"scrollTop"
+			],
+			[
+				"pre",
+				"previousClassName"
+			],
+			[
+				"wid",
+				"width"
+			],
+			[
+				"evn",
+				"events"
+			],
+			[
+				"classn",
+				"className"
+			],
+			[
+				"eve",
+				"event_title"
+			],
+			[
+				"ba",
+				"background"
+			],
+			[
+				"DATE",
+				"date"
+			],
+			[
+				"font",
+				"font-style"
+			],
+			[
+				"sa",
+				"sans-serif"
+			],
+			[
+				"margi",
+				"margin-top"
+			],
+			[
+				"mari",
+				"margin-top"
+			],
+			[
+				"cne",
+				"content"
+			],
+			[
+				"inlin",
+				"inline-block"
+			],
+			[
+				"inli",
+				"inline-block"
+			],
+			[
+				"list-sty",
+				"list-style-type"
+			],
+			[
+				"LOR",
+				"LORENZO"
+			],
+			[
+				"enque",
+				"enqueue_test_scripts"
+			],
+			[
+				"dat",
+				"dateLastAdded"
+			],
+			[
+				"upa",
+				"updatedRating"
+			],
+			[
+				"update",
+				"updatedRating"
+			],
+			[
+				"up",
+				"updatedTotalRatings"
+			],
+			[
+				"new",
+				"newRating"
+			],
+			[
+				"updat",
+				"updatedTotalRatings"
+			],
+			[
+				"tota",
+				"totalRatings"
+			],
+			[
+				"ra",
+				"rating"
+			],
+			[
+				"find",
+				"findById"
+			],
+			[
+				"cont",
+				"contestDoc"
+			],
+			[
+				"ne",
+				"newContest"
+			],
+			[
+				"upload",
+				"uploadImageName"
+			],
+			[
+				"contet",
+				"contestIds"
+			],
+			[
+				"USER",
+				"userDoc"
+			],
+			[
+				"con",
+				"contest"
+			],
+			[
+				"NEW",
+				"newUser"
+			],
+			[
+				"user",
+				"user"
+			],
+			[
+				"obw_eve",
+				"obw_events_desc"
+			],
+			[
+				"obw_events",
+				"obw_events_startdate"
+			],
+			[
+				"op",
+				"option	Tag"
+			],
+			[
+				"mar",
+				"margin-top"
+			]
+		]
+	},
+	"buffers":
+	[
+		{
+			"file": "wp-content/themes/omahabeerweek/sass/partials/_page.scss",
+			"settings":
+			{
+				"buffer_size": 12420,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "wp-content/themes/omahabeerweek/sass/partials/_media.scss",
+			"settings":
+			{
+				"buffer_size": 8378,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "wp-content/themes/omahabeerweek/js/script.js",
+			"settings":
+			{
+				"buffer_size": 9481,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "wp-content/themes/omahabeerweek/header.php",
+			"settings":
+			{
+				"buffer_size": 3896,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "wp-content/themes/omahabeerweek/footer.php",
+			"settings":
+			{
+				"buffer_size": 843,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "wp-content/themes/omahabeerweek/page-about.php",
+			"settings":
+			{
+				"buffer_size": 247,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "wp-content/themes/omahabeerweek/page-members.php",
+			"settings":
+			{
+				"buffer_size": 5186,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "wp-content/themes/omahabeerweek/page-breweries.php",
+			"settings":
+			{
+				"buffer_size": 5368,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "wp-content/themes/omahabeerweek/functions.php",
+			"settings":
+			{
+				"buffer_size": 19218,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "wp-config.php",
+			"settings":
+			{
+				"buffer_size": 3373,
+				"line_ending": "Windows"
+			}
+		}
+	],
+	"build_system": "",
+	"command_palette":
+	{
+		"height": 375.0,
+		"selected_items":
+		[
+			[
+				"edi",
+				"Shopify: Edit asset"
+			],
+			[
+				"shop",
+				"Shopify: Edit asset"
+			],
+			[
+				"sho",
+				"Shopify: Choose store"
+			],
+			[
+				"Sho",
+				"Shopify: Edit asset"
+			],
+			[
+				"",
+				"Set Syntax: HTML"
+			],
+			[
+				"Snippet: ",
+				"Snippet: html"
+			],
+			[
+				"Package Control: ",
+				"Package Control: Install Package"
+			]
+		],
+		"width": 561.0
+	},
+	"console":
+	{
+		"height": 146.0
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"file_history":
+	[
+		"/Users/evanjohnston/Development/omahabeerweek/wp-content/themes/omahabeerweek/page-events.php",
+		"/Users/evanjohnston/Development/omahabeerweek/wp-content/themes/omahabeerweek/index.php",
+		"/source/MutualOfOmaha/Websites/WildKingdom/404.php",
+		"/source/MutualOfOmaha/Websites/WildKingdom/about.php",
+		"/source/MutualOfOmaha/Websites/WildKingdom/app.php",
+		"/source/MutualOfOmaha/Websites/WildKingdom/contact.php",
+		"/source/MutualOfOmaha/Websites/WildKingdom/index.php",
+		"/source/MutualOfOmaha/Websites/WildKingdom/nextwildguide.php",
+		"/source/MutualOfOmaha/Websites/WildKingdom/privacy.php",
+		"/source/MutualOfOmaha/Websites/WildKingdom/terms.php",
+		"/source/MutualOfOmaha/Websites/WildKingdom/upgrade.php",
+		"/source/MutualOfOmaha/Websites/WildKingdom/videos.php",
+		"/source/MutualOfOmaha/Websites/WildKingdom/css/style.css",
+		"/source/MutualOfOmaha/Websites/WildKingdom/inc/header.inc.php",
+		"/Volumes/BOOTCAMP/projects/LPK/LPK Live Stats/Login_Count_By_Day.sql",
+		"/Users/evanjohnston/Downloads/retina/README.md",
+		"/Volumes/WEBRoot/MoO/wildkingdom/02122013/js/home.js",
+		"/Volumes/WEBRoot/MoO/wildkingdom/02122013/inc/footer.inc.php",
+		"/Volumes/WEBRoot/MoO/wildkingdom/02122013/inc/header.inc.php",
+		"/Volumes/WEBRoot/MoO/wildkingdom/02122013/inc/functions.inc.php",
+		"/Users/evanjohnston/Projects/passwords.txt",
+		"/Users/evanjohnston/Development/omahabeerweek/wp-content/themes/omahabeerweek/page-bars.php",
+		"/Users/evanjohnston/Development/omahabeerweek/wp-content/themes/omahabeerweek/page-bus-tours.php",
+		"/Users/evanjohnston/Development/omahabeerweek/wp-content/themes/omahabeerweek/page-breweries.php",
+		"/Users/evanjohnston/Development/omahabeerweek/wp-content/themes/omahabeerweek/page-sponsors.php",
+		"/Users/evanjohnston/Development/omahabeerweek/wp-content/themes/omahabeerweek/functions.php",
+		"/Users/evanjohnston/Downloads/wp-config.php",
+		"/Users/evanjohnston/Development/omahabeerweek/wp-content/themes/omahabeerweek/404.php",
+		"/Users/evanjohnston/Development/omahabeerweek/wp-content/themes/omahabeerweek/footer.php",
+		"/Users/evanjohnston/Development/omahabeerweek/wp-content/themes/omahabeerweek/header.php",
+		"/Users/evanjohnston/Development/omahabeerweek/wp-content/themes/omahabeerweek/js/pubforce-admin.js",
+		"/Users/evanjohnston/Downloads/Mondays/index.html",
+		"/Users/evanjohnston/Development/omahabeerweek/wp-content/themes/omahabeerweek/css/obw-functions.css",
+		"/Users/evanjohnston/Development/omahabeerweek/wp-config.php",
+		"/Users/evanjohnston/Development/omahabeerweek/wp-content/themes/omahabeerweek/license.txt",
+		"/Users/evanjohnston/Desktop/Omaha Beer Week Admin Password.txt",
+		"/Users/evanjohnston/Development/omahabeerweek/wp-content/themes/omahabeerweek/page-about.php",
+		"/private/etc/apache2/extra/httpd-vhosts.conf",
+		"/Users/evanjohnston/Sites/omahabeerweek/wp-content/themes/omahabeerweek/stylesheets/style.css",
+		"/Users/evanjohnston/Development/PhenomblueV8/cms/wp-content/themes/phenomblue/header.php",
+		"/Users/evanjohnston/Sites/omahabeerweek/wp-content/themes/omahabeerweek/functions.php",
+		"/Users/evanjohnston/Sites/omahabeerweek/wp-includes/plugin.php",
+		"/private/etc/apache2/httpd.conf",
+		"/Users/evanjohnston/Sites/omahabeerweek/wp-content/themes/omahabeerweek/header.php",
+		"/Users/evanjohnston/Sites/omahabeerweek/wp-content/themes/omahabeerweek/page-breweries.php",
+		"/Users/evanjohnston/Sites/omahabeerweek/wp-content/themes/omahabeerweek/page-bars.php",
+		"/Users/evanjohnston/Sites/omahabeerweek/wp-content/themes/omahabeerweek/sass/partials/_fonts.scss",
+		"/Users/evanjohnston/Sites/omahabeerweek/wp-content/themes/omahabeerweek/css/obw-functions.css",
+		"/Users/evanjohnston/Sites/omahabeerweek/wp-content/themes/omahabeerweek/content-event.php",
+		"/Users/evanjohnston/Library/Application Support/Sublime Text 2/Packages/User/Preferences.sublime-settings",
+		"/Users/evanjohnston/Sites/omahabeerweek/wp-content/themes/omahabeerweek/index.php",
+		"/Users/evanjohnston/Sites/omahabeerweek/wp-content/themes/omahabeerweek/fonts/fonts.css",
+		"/Users/evanjohnston/Sites/omahabeerweek/wp-content/themes/omahabeerweek/page-home.php",
+		"/Users/evanjohnston/Sites/omahabeerweek/wp-content/themes/omahabeerweek/style.css",
+		"/Users/evanjohnston/Development/Look/cms/wp-content/themes/look/header.php",
+		"/Users/evanjohnston/Development/Look/cms/wp-content/themes/look/functions.php",
+		"/Users/evanjohnston/Sites/omahabeerweek/wp-content/themes/twentyeleven/content.php",
+		"/Users/evanjohnston/Desktop/EventsMeetingNotes",
+		"/Users/evanjohnston/Sites/omahabeerweek/wp-content/themes/twentyeleven/index.php",
+		"/Users/evanjohnston/Library/Application Support/Sublime Text 2/Packages/Shopify/cache/marks-pacocha3281/3655412/templates/page.liquid",
+		"/Users/evanjohnston/Desktop/Shopify Storefront Password",
+		"/Users/evanjohnston/Library/Application Support/Sublime Text 2/Packages/Shopify/cache/marks-pacocha3281/3655412/layout/theme.liquid",
+		"/Users/evanjohnston/Library/Application Support/Sublime Text 2/Packages/User/ShopifyStores.json",
+		"/Users/evanjohnston/Library/Application Support/Sublime Text 2/Packages/Shopify/Shopify.sublime-commands",
+		"/Users/evanjohnston/Library/Application Support/Sublime Text 2/Packages/Shopify/CSS.sublime-settings",
+		"/Users/evanjohnston/Library/Application Support/Sublime Text 2/Packages/Shopify/README.md",
+		"/Users/evanjohnston/Sites/Look/php.ini",
+		"/Users/evanjohnston/Sites/Memsee/js/script.js",
+		"/Users/evanjohnston/Sites/omahabeerweek/wp-config.php",
+		"/Users/evanjohnston/Sites/omahabeerweek/wp-content/themes/omahabeerweek/page-faq.php",
+		"/Users/evanjohnston/Sites/omahabeerweek/wp-content/themes/omahabeerweek/page-about.php",
+		"/Users/evanjohnston/Sites/omahabeerweek/wp-content/themes/omahabeerweek/page-bus-tours.php",
+		"/Users/evanjohnston/Sites/omahabeerweek/.htaccess",
+		"/Volumes/BOOTCAMP/Users/ejohnston/Downloads/webfontkit-20121120-122126/stylesheet.css",
+		"/Users/evanjohnston/Downloads/jquery.countdown.package-1.6.0/jquery.countdown.js",
+		"/Users/evanjohnston/Sites/omahabeerweek/wp-content/themes/omahabeerweek/includes/initialize.php",
+		"/Users/evanjohnston/Sites/omahabeerweek/wp-content/themes/omahabeerweek/footer.php",
+		"/Users/evanjohnston/Sites/omahabeerweek/wp-content/themes/twentyeleven/header.php",
+		"/Users/evanjohnston/Sites/omahabeerweek/wp-content/themes/twentyeleven/style.css",
+		"/Users/evanjohnston/Development/PhenomblueV8/cms/wp-content/themes/phenomblue/js/approach.js",
+		"/Users/evanjohnston/Sites/omahabeerweek/wp-content/themes/omahabeerweek/js/showcase.js",
+		"/Users/evanjohnston/Sites/omahabeerweek/wp-content/themes/omahabeerweek/css/jquery-ui-1.8.9.custom.css",
+		"/Users/evanjohnston/Sites/omahabeerweek/wp-content/themes/omahabeerweek/content.php",
+		"/Users/evanjohnston/Desktop/uninstall_mono.sh",
+		"/Users/evanjohnston/Downloads/full_site/index.html",
+		"/Users/evanjohnston/Sites/omahabeerweek/wp-content/themes/omahabeerweek/css/obw.css",
+		"/Users/evanjohnston/Sites/omahabeerweek/wp-content/themes/omahabeerweek/js/events.js",
+		"/Users/evanjohnston/Sites/omahabeerweek/wp-includes/widgets.php",
+		"/Users/evanjohnston/Sites/omahabeerweek/wp-content/themes/twentyeleven copy/functions.php",
+		"/Users/evanjohnston/Sites/omahabeerweek/wp-content/themes/twentyeleven copy/index.php",
+		"/Users/evanjohnston/Sites/omahabeerweek/wp-content/themes/omahabeerweek/page-test.php",
+		"/Users/evanjohnston/Sites/Memsee/css/index.css",
+		"/Users/evanjohnston/Sites/Memsee/index.html",
+		"/Users/evanjohnston/Sites/omahabeerweek/wp-content/plugins/peters-post-notes/peters_post_notes.php",
+		"/Users/evanjohnston/Development/Page/iOS/Page/Page/Data/data.json",
+		"/Users/evanjohnston/Sites/Memsee/css/js/script.js",
+		"/Users/evanjohnston/Development/Page/iOS/Page/Page/Data/noah.html",
+		"/Users/evanjohnston/Development/Page/iOS/Page/Page/Data/vulgate.html",
+		"/Users/evanjohnston/Development/Page/iOS/Page/Page/Data/piero_i.html",
+		"/Users/evanjohnston/Development/Page/iOS/Page/Page/Data/lorenzo_elder.html",
+		"/Users/evanjohnston/Development/Page/iOS/Page/Page/Data/lorenzo.html",
+		"/Users/evanjohnston/Development/Page/iOS/Page/Page/Data/joshua.html",
+		"/Users/evanjohnston/Development/Page/iOS/Page/Page/Data/moses.html",
+		"/Users/evanjohnston/Development/Page/iOS/Page/Page/Data/esau_jacob.html",
+		"/Users/evanjohnston/Development/Page/iOS/Page/Page/Data/abraham.html",
+		"/Users/evanjohnston/Development/Page/iOS/Page/Page/Data/joseph.html",
+		"/Users/evanjohnston/Desktop/Page/HTML/noah.html",
+		"/Users/evanjohnston/Development/Page/WPF/Page.Server/server.js",
+		"/Users/evanjohnston/Desktop/Page/HTML/peirfranceso.html",
+		"/Users/evanjohnston/Desktop/Page/HTML/jerome_lion.html",
+		"/Users/evanjohnston/Desktop/Page/HTML/psalm45.html",
+		"/Users/evanjohnston/Desktop/Page/HTML/vulgate.html",
+		"/Users/evanjohnston/Desktop/Page/HTML/lorenzo",
+		"/Users/evanjohnston/Desktop/Page/HTML/joseph",
+		"/Users/evanjohnston/Development/BullsEye/BullsEye.html",
+		"/Users/evanjohnston/Sites/omahabeerweek/wp-admin/css/wp-admin.css",
+		"/Users/evanjohnston/Development/Mantastic/API/routes/contest.js",
+		"/Users/evanjohnston/Development/Mantastic/API/routes/index.js",
+		"/Users/evanjohnston/Sites/mantastic/routes/photo.js",
+		"/Users/evanjohnston/Sites/mantastic/routes/contest.js",
+		"/Users/evanjohnston/Sites/mantastic/models/contest.js",
+		"/Users/evanjohnston/Sites/mantastic/models/user.js",
+		"/Users/evanjohnston/Sites/mantastic/models/photo.js",
+		"/Users/evanjohnston/Sites/manatastic/routes/photo.js",
+		"/Users/evanjohnston/Sites/manatastic/models/photo.js",
+		"/Users/evanjohnston/Sites/manatastic/routes/contest.js",
+		"/Users/evanjohnston/Sites/manatastic/models/contest.js",
+		"/Users/evanjohnston/Sites/manatastic/routes/user.js"
+	],
+	"find":
+	{
+		"height": 37.0
+	},
+	"find_in_files":
+	{
+		"height": 0.0,
+		"where_history":
+		[
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"#video",
+			"}\n",
+			"show-all",
+			"show",
+			"mobile-e",
+			"mobile-even",
+			"245",
+			"$bar",
+			"#selected-page",
+			";\n",
+			"https://s3.amazonaws.com/omahabeerweek",
+			"')\n",
+			"selected-page",
+			"mobile",
+			"$bar",
+			"div.bars",
+			"view-",
+			"celebrating",
+			"view",
+			"view-events",
+			"\n				// text-shadow: 0px 8px 0px #000000;",
+			"view-events",
+			"{\n",
+			"nav",
+			"updateMinSi",
+			"length",
+			"showeventsAuthor",
+			".12",
+			"user_type",
+			"			\n",
+			"$event",
+			"events-back",
+			"{\n",
+			".get",
+			" {",
+			"event-date",
+			"z-index",
+			"updateMin",
+			"        		\n",
+			"console.log",
+			"scrollToEvent",
+			"#;\n",
+			"all events",
+			"is_mo",
+			"#;\n",
+			"color:",
+			"startdate",
+			"start_date",
+			"write_clo",
+			"newContent",
+			"content_width",
+			"8px",
+			"console.log",
+			";\n",
+			"console.log(",
+			"().'</",
+			"twenty",
+			"mobile",
+			"AllowOverride",
+			"())",
+			"updateMin",
+			"#events",
+			"after",
+			"div.bars",
+			"$author_id",
+			";\n",
+			"width",
+			"'';\n",
+			"fadeIn",
+			"url('images",
+			"url('",
+			"\n            	",
+			");\n",
+			");",
+			"{\n",
+			"content",
+			">';\n",
+			"obw_events_startdate",
+			"top",
+			"info",
+			"clear",
+			"f0e",
+			"all_with_meta",
+			"\n	'fields' => 'all_with_meta',",
+			"5px",
+			"copy\n",
+			";\n",
+			"font-size",
+			"float",
+			"28px",
+			"7",
+			"nav",
+			"header",
+			"filter_event_list",
+			"filter_events_list",
+			"filter_posts_list",
+			"media",
+			"<br",
+			"br",
+			"28px",
+			"contact",
+			"main",
+			"content",
+			"nav",
+			"background-home",
+			"header",
+			"obw_",
+			"center",
+			"user_role",
+			"Read",
+			"wp_enqueue_script",
+			"post",
+			",\n",
+			"map_meta_cap",
+			"dateLastPhotoAdded",
+			"}\n",
+			"userQuery",
+			"users",
+			"{\n",
+			", ",
+			"photos",
+			";\n",
+			"rating",
+			"newRating",
+			"files",
+			";\n",
+			"dateStart",
+			"};"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+			"$member",
+			"$http://dgllvx19ffpgh.cloudfront.net",
+			"$brewery",
+			"div.breweries",
+			".13",
+			"$newContent",
+			"div.breweries",
+			"$query_author_id",
+			"url('../images",
+			"url('../fonts/",
+			"url('../../fonts/",
+			"Photo",
+			"obw",
+			"'"
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"selected": 9,
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"file": "wp-content/themes/omahabeerweek/sass/partials/_page.scss",
+					"settings":
+					{
+						"buffer_size": 12420,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								719,
+								719
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Sass/Syntaxes/Sass.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "wp-content/themes/omahabeerweek/sass/partials/_media.scss",
+					"settings":
+					{
+						"buffer_size": 8378,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								2850,
+								2850
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Sass/Syntaxes/Sass.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 2877.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "wp-content/themes/omahabeerweek/js/script.js",
+					"settings":
+					{
+						"buffer_size": 9481,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								4390,
+								4390
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 2473.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"file": "wp-content/themes/omahabeerweek/header.php",
+					"settings":
+					{
+						"buffer_size": 3896,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								326,
+								326
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/PHP/PHP.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 4,
+					"file": "wp-content/themes/omahabeerweek/footer.php",
+					"settings":
+					{
+						"buffer_size": 843,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								120,
+								120
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/PHP/PHP.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 5,
+					"file": "wp-content/themes/omahabeerweek/page-about.php",
+					"settings":
+					{
+						"buffer_size": 247,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								240,
+								240
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/PHP/PHP.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 6,
+					"file": "wp-content/themes/omahabeerweek/page-members.php",
+					"settings":
+					{
+						"buffer_size": 5186,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1964,
+								1895
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/HTML/HTML.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 550.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 7,
+					"file": "wp-content/themes/omahabeerweek/page-breweries.php",
+					"settings":
+					{
+						"buffer_size": 5368,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								4268,
+								4268
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/PHP/PHP.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 5.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 8,
+					"file": "wp-content/themes/omahabeerweek/functions.php",
+					"settings":
+					{
+						"buffer_size": 19218,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								7793,
+								7793
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/PHP/PHP.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 3680.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 9,
+					"file": "wp-config.php",
+					"settings":
+					{
+						"buffer_size": 3373,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								213,
+								213
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/PHP/PHP.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				}
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 0.0
+	},
+	"input":
+	{
+		"height": 0.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"replace":
+	{
+		"height": 66.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"show_minimap": true,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 204.0,
+	"status_bar_visible": true
+}
