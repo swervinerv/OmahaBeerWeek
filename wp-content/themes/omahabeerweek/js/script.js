@@ -303,7 +303,7 @@ var showEventsAuthorId = 0;
 		            	$('#selected-page').text(selectedPageText);
 	            	}
 	            	else {
-	            		var newTop = 0;
+	            		var newTop = $('#branding').outerHeight();;
 
 						$newContent.css({
 		            		'position': 'fixed',
@@ -315,17 +315,18 @@ var showEventsAuthorId = 0;
 
 						if (previousClassName !== 'events') {
 							$('header', 'div.' + previousClassName).css({
+								'top': 0,
 								'position': 'absolute'
 							});
 
 							$('div.' + previousClassName, "#main").animate({
-								top: -($('div.' + previousClassName, "#main").height())
+								top: -($(window).innerHeight()).toString() + 'px'
 							}, 1150);
 						}
 
-						if ($newContent.hasClass('events')) {
-							newTop = $('#branding').outerHeight();
-						}
+						// if ($newContent.hasClass('events')) {
+						// 	newTop = $('#branding').outerHeight();
+						// }
 
 						$newContent.animate({
 							top: newTop
@@ -335,13 +336,14 @@ var showEventsAuthorId = 0;
 							$('div.' + previousClassName, "#main").remove();
 
 							$('header', $(this)).css({
-								'top': '0px'
+								'top': newTop,
+								'position': 'fixed'
 							});
 
 							$(this).css({
 								'position': 'relative',
 		            			'z-index': 0
-							})
+							});
 
 							if (scrollToEvent !== 0) {
 								$('html, body').animate({
