@@ -55,7 +55,7 @@ $detect = new Mobile_Detect();
 <script src="<?php echo $template_directory_uri ?>/js/lib/jquery.countdown.js" type="text/javascript"></script>
 <script src="<?php echo $template_directory_uri ?>/js/lib/jquery.address-1.5.min.js" type="text/javascript"></script>
 <script src="<?php echo $template_directory_uri ?>/js/lib/jquery.imagesloaded.min.js" type="text/javascript"></script>
-<link href="<?php echo $template_directory_uri ?>/style.css?v=1.4" rel='stylesheet' />
+<link href="<?php echo $template_directory_uri ?>/style.css?v=1.5" rel='stylesheet' />
 
 </head>
 
