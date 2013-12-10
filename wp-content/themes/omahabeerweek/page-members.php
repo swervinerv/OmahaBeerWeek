@@ -35,9 +35,9 @@ $members = $wp_user_search->get_results();
 				<p>
 					<?php echo get_user_meta( $member->ID, 'about', true ); ?>
 				</p>
-				<div>
+				<!-- <div>
 					<a href="#" class="show-all" data-id="<?php echo $member->ID; ?>" data-action="show">SHOW ALL OF THIS MEMBER’S EVENTS</a>
-				</div>
+				</div> -->
 			</div>
 		<?php endforeach; ?>
 		</div>
@@ -141,10 +141,10 @@ $members = $wp_user_search->get_results();
 			}
 
 			$(window).scroll(function () {
-				if ($(window).scrollTop() > 115) {
+				if ($(window).scrollTop() > 120) {
 					$('div.list', 'div.bars').css({
 						'position': 'fixed',
-						'top': ($('header', 'div.bars').outerHeight() - $('div.list span', 'div.bars').outerHeight()).toString() + 'px',
+						'top': ($('header', 'div.bars').outerHeight() - $('div.list span', 'div.bars').outerHeight() + 85).toString() + 'px',
 						'left': ($('div.page-content', 'div.bars').offset().left + $('div.descriptions', 'div.bars').width()).toString() + 'px'
 					})
 				}

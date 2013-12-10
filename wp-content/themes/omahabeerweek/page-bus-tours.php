@@ -13,8 +13,8 @@ Template Name: Bus Tours
 			<?php the_post(); ?>		
 				<?php the_content(); ?>
 		<?php endif; ?>
-		<p style="text-align: center;">
+		<!-- <p style="text-align: center;">
 			<img src="http://dgllvx19ffpgh.cloudfront.net/craft-beer-bus-tour.png" alt="Craft Beer Bus Tour" />
-		</p>
+		</p> -->
 	</div>
 </div>

@@ -90,6 +90,7 @@ $detect = new Mobile_Detect();
 				<a href="<?php bloginfo('url'); ?>/#/sponsors">Sponsors</a>
 				<?php endif; ?>
 
+<<<<<<< HEAD
 				<?php if (!$detect->isMobile() && !$detect->isTablet()): ?>
 				<!-- <div id="all-events">
 					<a href="#" class="title">All Events</a>
@@ -107,6 +108,28 @@ $detect = new Mobile_Detect();
 				<?php endif; ?>
 			</nav>
 		</header>
+=======
+			<?php if ($detect->isMobile() && !$detect->isTablet()): ?>
+			<div id="mobile-nav">
+				<div class="arrow"></div>
+				<a id="selected-page" href="#" class="">HOME</a>
+				<a href="<?php bloginfo('url'); ?>/">HOME</a>
+				<!-- <a href="<?php bloginfo('url'); ?>/#/events" data-path="/events">PAST EVENTS</a> -->
+				<a href="<?php bloginfo('url'); ?>/#/about" data-path="/about">ABOUT</a>
+				<a href="<?php bloginfo('url'); ?>/#/tours" data-path="/tours">BUS</a>
+				<a href="<?php bloginfo('url'); ?>/#/members" data-path="/members">MEMBERS</a>
+				<a href="<?php bloginfo('url'); ?>/#/faq" data-path="/faq">FAQ</a>
+				<a href="<?php bloginfo('url'); ?>/#/sponsors" data-path="/sponsors">SPONSORS</a>
+			</div>
+			<?php else: ?>
+			<a href="<?php bloginfo('url'); ?>/#/about">About</a>
+			<!-- <a href="<?php bloginfo('url'); ?>/#/events">Past Events</a> -->
+			<a href="<?php bloginfo('url'); ?>/#/tours">Bus</a>
+			<a href="<?php bloginfo('url'); ?>/#/members">Members</a>
+			<a href="<?php bloginfo('url'); ?>/#/faq">FAQ</a>
+			<a href="<?php bloginfo('url'); ?>/#/sponsors">Sponsors</a>
+			<?php endif; ?>
+>>>>>>> feature/2014-design-changes
 
 		<div id="main">
 
