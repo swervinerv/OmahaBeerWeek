@@ -236,9 +236,9 @@ a:hover {
 		position: absolute;
 		right: 0px;
 		top: 35px;
-		padding-left: 25px;
+		padding-left: 20px;
 		width: 190px;
-		height: 62px;
+		height: 47px;
 		background: #dba137;
 		text-align: left;
 		overflow: hidden;
@@ -253,23 +253,38 @@ a:hover {
 		}
 		a.title {
 			margin-top: 10px;
-			padding: 0 8px;
-			width: 81%;
+			padding: 0 8px 0 0;
+			width: 100%;
 			font-family: 'freestyle_script_stdregular';
-			font-size: 2.0em;
-			background: transparent url('./images/events-menu-bg.png') no-repeat 135px 3px;
+			font-size: 1.5em;
+			z-index: 1;
+			// background: transparent url('./images/events-menu-bg.png') no-repeat 135px 3px;
 		}
 		a.title:hover {
-			background-position: 135px -36px;
+			// background-position: 135px -36px;
 			color: #3d3d3d;
 		}
 		a.title.open {
-			background-position: 135px -76px;
+			// background-position: 135px -76px;
 			color: #3d3d3d;
 		}
 		a.title.open:hover {
-			background-position: 135px -116px;	
+			// background-position: 135px -116px;	
 			color: #3d3d3d;
+		}
+
+		span {
+			display: block;
+			position: absolute;
+			top: 10px;
+			right: 14px;
+			width: 30px;
+			height: 30px;
+			background-image: url('./images/menu-icon-light.svg');
+			background-size: 100% 100%;
+
+			@include transition-property(transform);
+			@include transition-duration(0.5s);
 		}
 	}
 
@@ -396,7 +411,10 @@ a:hover {
 		margin: 35px auto 0;
 		width: 102px;
 		height: 102px;
-		background: transparent url('./images/view-events.png') no-repeat;
+		background-color: transparent;
+		background-image: url('./images/view-events.png');
+		background-repeat: no-repeat;
+		background-size: 100% 100%;
 		display: block;
 		text-align: center;
 	}

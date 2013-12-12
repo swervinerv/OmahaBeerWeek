@@ -49,16 +49,16 @@ $events_query = new PostsOrderedByMetaQuery($args);
 	<div id="events">
 		<?php if ( $is_mobile_device && is_null( $query_date ) ): ?>
 		<div id="events-nav">
-			<a href="#/15" data-id="15" class="event-date">FRIDAY 02.15.13</a>
-			<a href="#/16" data-id="16" class="event-date">SATURDAY 02.16.13</a>
-			<a href="#/17" data-id="17" class="event-date">SUNDAY 02.17.13</a>
-			<a href="#/18" data-id="18" class="event-date">MONDAY 02.18.13</a>
-			<a href="#/19" data-id="19" class="event-date">TUESDAY 02.19.13</a>
-			<a href="#/20" data-id="20" class="event-date">WEDNESDAY 02.20.13</a>
-			<a href="#/21" data-id="21" class="event-date">THURSDAY 02.21.13</a>
-			<a href="#/22" data-id="22" class="event-date">FRIDAY 02.22.13</a>
-			<a href="#/23" data-id="23" class="event-date">SATURDAY 02.23.13</a>
-			<a href="#/24" data-id="24" class="event-date">SUNDAY 02.24.13</a>
+			<a href="#/14" data-id="14" class="event-date">FRIDAY 02.14.14</a>
+			<a href="#/15" data-id="15" class="event-date">SATURDAY 02.15.14</a>
+			<a href="#/16" data-id="16" class="event-date">SUNDAY 02.16.14</a>
+			<a href="#/17" data-id="17" class="event-date">MONDAY 02.17.14</a>
+			<a href="#/18" data-id="18" class="event-date">TUESDAY 02.18.14</a>
+			<a href="#/19" data-id="19" class="event-date">WEDNESDAY 02.19.14</a>
+			<a href="#/20" data-id="20" class="event-date">THURSDAY 02.20.14</a>
+			<a href="#/21" data-id="21" class="event-date">FRIDAY 02.21.14</a>
+			<a href="#/22" data-id="22" class="event-date">SATURDAY 02.22.14</a>
+			<a href="#/23" data-id="23" class="event-date">SUNDAY 02.23.14</a>
 		</div>
 		<?php else: ?>
 			<?php while ($events_query->have_posts()) : $events_query->the_post(); ?>

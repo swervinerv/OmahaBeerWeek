@@ -33,7 +33,7 @@
   				@include transition-duration(0.5s);
 
 				&.open {
-					height: 230px;
+					height: 255px;
 
 					.arrow {
 						@include rotate(180deg);

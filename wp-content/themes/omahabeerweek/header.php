@@ -73,7 +73,7 @@ $detect = new Mobile_Detect();
 				<div class="arrow"></div>
 				<a id="selected-page" href="#" class="">HOME</a>
 				<a href="<?php bloginfo('url'); ?>/">HOME</a>
-				<!-- <a href="<?php bloginfo('url'); ?>/#/events" data-path="/events">PAST EVENTS</a> -->
+				<a href="<?php bloginfo('url'); ?>/#/events" data-path="/events">EVENTS</a>
 				<a href="<?php bloginfo('url'); ?>/#/about" data-path="/about">ABOUT</a>
 				<a href="<?php bloginfo('url'); ?>/#/tours" data-path="/tours">BUS</a>
 				<a href="<?php bloginfo('url'); ?>/#/members" data-path="/members">MEMBERS</a>
@@ -90,7 +90,7 @@ $detect = new Mobile_Detect();
 			<?php endif; ?>
 
 			<?php if (!$detect->isMobile() && !$detect->isTablet()): ?>
-			<div id="all-events">
+			<!-- <div id="all-events">
 				<span></span>
 				<a href="#" class="title">All Events</a>
 				<a href="#/15" data-id="15">FRIDAY 02.15.13</a>
@@ -103,7 +103,7 @@ $detect = new Mobile_Detect();
 				<a href="#/22" data-id="22">FRIDAY 02.22.13</a>
 				<a href="#/23" data-id="23">SATURDAY 02.23.13</a>
 				<a href="#/24" data-id="24">SUNDAY 02.24.13</a>
-			</div>
+			</div> -->
 			<?php endif; ?>
 		</nav>
 	</header>
