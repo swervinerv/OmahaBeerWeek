@@ -76,7 +76,6 @@ get_header();
 	var IS_MOBILE = <?php echo $is_mobile ? "true" : "false" ?>;
 	var IS_TABLET = <?php echo $is_tablet ? "true" : "false" ?>;
 </script>
-
 <div id="wrapper">
 	<div id="home">
 		<div id="celebrating">
@@ -88,19 +87,19 @@ get_header();
 		<div id="countdown"></div>
 		<?php endif; ?>
 
-		<div id="contact_links" style="margin-top: 40px;">
+		<div id="contact_links">
 			<a href="//facebook.com/OmahaBeerWeek" target="_blank" class="facebook">Facebook</a>
 			<a href="//twitter.com/omahabeerweek" target="_blank" class="twitter">Twitter</a>
 		</div>
 
 		<?php if (!$is_mobile): ?>
-		<!-- <a href="#/events" id="view-events"></a> -->
+		<a href="#/events" id="view-events"></a>
 		<?php endif; ?>
 
 		<img id="home-image" src="<?php echo $home_image_url ?>" />
 	</div>
 </div>
 
-<?php //if ( !$detect->isMobile() || $detect->isTablet() ) { get_template_part( 'page', 'events' ); } ?>
+<?php if ( !$detect->isMobile() || $detect->isTablet() ) { get_template_part( 'page', 'events' ); } ?>
 
 <?php get_footer(); ?>

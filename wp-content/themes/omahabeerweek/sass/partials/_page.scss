@@ -554,7 +554,6 @@ div.events {
 				position: absolute;
 				top: 0px;
 				padding: 0;
-				background: #dba137;
 				font-size: 3.8em;
 
 				h2,
@@ -569,9 +568,11 @@ div.events {
 				}
 
 				h3 {
+					position: relative;
 					margin: 0;
 					padding: 10px 0;
 					font-size: 1.0em;
+					z-index: 1;
 				}
 			}
 
