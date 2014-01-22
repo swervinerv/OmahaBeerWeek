@@ -63,22 +63,16 @@ var showEventsAuthorId = 0;
 		});
 
 		$('div#all-events a').click(function (e) {
+			var p = $(this).parent('#all-events');
+
 			e.preventDefault();
 
 			if ($(this).hasClass('title')) {
-				if ($(this).hasClass('open')) {
-					$(this).removeClass('open');
-
-					$('div#all-events').animate({
-						height: '-=230'
-					}, 250);
+				if (p.hasClass('open')) {
+					p.removeClass('open');
 				}
 				else {
-					$(this).addClass('open');
-					
-					$('div#all-events').animate({
-						height: '+=230'
-					}, 250);
+					p.addClass('open');
 				}
 
 				return;
@@ -96,10 +90,7 @@ var showEventsAuthorId = 0;
 				$.address.value('/events');
 			}
 
-			$('div#all-events a.open').removeClass('open');
-			$('div#all-events').animate({
-				height: '-=230'
-			}, 250);
+			p.removeClass('open');
 		});
 
 		if (IS_TABLET) {

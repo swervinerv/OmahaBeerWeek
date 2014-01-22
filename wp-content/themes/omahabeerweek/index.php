@@ -29,7 +29,6 @@ if ( !isset( $_SESSION['home_images'] ) ) {
 			'beercorner480' => 'http://dgllvx19ffpgh.cloudfront.net/beer-corner-480.jpg',
 			'jakes480' => 'http://dgllvx19ffpgh.cloudfront.net/jakes-480.jpg',
 			'krug480' => 'http://dgllvx19ffpgh.cloudfront.net/krug-480.jpg',
-			'mojo480' => 'http://dgllvx19ffpgh.cloudfront.net/mojo-480.jpg',
 			'moon480' => 'http://dgllvx19ffpgh.cloudfront.net/moon-480.jpg'
 		);
 	}
@@ -38,7 +37,6 @@ if ( !isset( $_SESSION['home_images'] ) ) {
 			'beercorner1024' => 'http://dgllvx19ffpgh.cloudfront.net/beer-corner-1024.jpg',
 			'jakes1024' => 'http://dgllvx19ffpgh.cloudfront.net/jakes-1024.jpg',
 			'krug1024' => 'http://dgllvx19ffpgh.cloudfront.net/krug-1024.jpg',
-			'mojo1024' => 'http://dgllvx19ffpgh.cloudfront.net/mojo-1024.jpg',
 			'moon1024' => 'http://dgllvx19ffpgh.cloudfront.net/moon-1024.jpg'
 		);
 	}
@@ -47,7 +45,6 @@ if ( !isset( $_SESSION['home_images'] ) ) {
 			'beercorner' => 'http://dgllvx19ffpgh.cloudfront.net/beer-corner.jpg',
 			'jakes' => 'http://dgllvx19ffpgh.cloudfront.net/jakes.jpg',
 			'krug' => 'http://dgllvx19ffpgh.cloudfront.net/krug.jpg',
-			'mojo' => 'http://dgllvx19ffpgh.cloudfront.net/mojo.jpg',
 			'moon' => 'http://dgllvx19ffpgh.cloudfront.net/moon.jpg'
 		);
 	}
@@ -76,7 +73,6 @@ get_header();
 	var IS_MOBILE = <?php echo $is_mobile ? "true" : "false" ?>;
 	var IS_TABLET = <?php echo $is_tablet ? "true" : "false" ?>;
 </script>
-
 <div id="wrapper">
 	<div id="home">
 		<div id="celebrating">
@@ -88,19 +84,19 @@ get_header();
 		<div id="countdown"></div>
 		<?php endif; ?>
 
-		<div id="contact_links" style="margin-top: 40px;">
+		<div id="contact_links">
 			<a href="//facebook.com/OmahaBeerWeek" target="_blank" class="facebook">Facebook</a>
 			<a href="//twitter.com/omahabeerweek" target="_blank" class="twitter">Twitter</a>
 		</div>
 
 		<?php if (!$is_mobile): ?>
-		<!-- <a href="#/events" id="view-events"></a> -->
+		<a href="#/events" id="view-events"></a>
 		<?php endif; ?>
 
 		<img id="home-image" src="<?php echo $home_image_url ?>" />
 	</div>
 </div>
 
-<?php //if ( !$detect->isMobile() || $detect->isTablet() ) { get_template_part( 'page', 'events' ); } ?>
+<?php if ( !$detect->isMobile() || $detect->isTablet() ) { get_template_part( 'page', 'events' ); } ?>
 
 <?php get_footer(); ?>

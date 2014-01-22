@@ -35,9 +35,9 @@ $members = $wp_user_search->get_results();
 				<p>
 					<?php echo get_user_meta( $member->ID, 'about', true ); ?>
 				</p>
-				<!-- <div>
+				<div>
 					<a href="#" class="show-all" data-id="<?php echo $member->ID; ?>" data-action="show">SHOW ALL OF THIS MEMBER’S EVENTS</a>
-				</div> -->
+				</div>
 			</div>
 		<?php endforeach; ?>
 		</div>
