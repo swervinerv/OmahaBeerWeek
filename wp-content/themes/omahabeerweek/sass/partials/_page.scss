@@ -121,13 +121,12 @@ ul {
 }
 
 /* Links */
-a {
-	color: #f0e7c9;
-	text-decoration: none;
-}
+a,
 a:focus,
 a:active,
-a:hover {
+a:hover,
+a:visited {
+	color: #f0e7c9;
 	text-decoration: none;
 }
 
@@ -236,13 +235,31 @@ a:hover {
 		position: absolute;
 		right: 0px;
 		top: 35px;
-		padding-left: 20px;
+		padding-left: 25px;
 		width: 190px;
-		height: 47px;
+		height: 55px;
 		background: #dba137;
 		text-align: left;
 		overflow: hidden;
 		@include box-shadow(0px 8px 0px rgba(0, 0, 0, 0.75));
+		@include transition-property(height);
+  		@include transition-duration(0.25s);
+
+		&.open {
+			height: 285px;
+
+			a.title {
+				color: #3d3d3d;
+			}
+			a:hover,
+			a.title:hover {
+				color: #f0e7c9;
+			}
+
+			span {
+				@include rotate(180deg);
+			}
+		}
 
 		a {
 			margin: 0;
@@ -253,38 +270,29 @@ a:hover {
 		}
 		a.title {
 			margin-top: 10px;
-			padding: 0 8px 0 0;
-			width: 100%;
+			// padding: 0 8px;
+			width: 81%;
 			font-family: 'freestyle_script_stdregular';
-			font-size: 1.5em;
-			z-index: 1;
+			font-size: 1.7em;
 			// background: transparent url('./images/events-menu-bg.png') no-repeat 135px 3px;
 		}
 		a.title:hover {
-			// background-position: 135px -36px;
-			color: #3d3d3d;
-		}
-		a.title.open {
-			// background-position: 135px -76px;
-			color: #3d3d3d;
-		}
-		a.title.open:hover {
-			// background-position: 135px -116px;	
-			color: #3d3d3d;
+			color: #f0e7c9;
 		}
 
 		span {
-			display: block;
 			position: absolute;
-			top: 10px;
-			right: 14px;
+			top: 11px;
+			right: 11px;
+			display: block;
 			width: 30px;
 			height: 30px;
+			background-image: url('./images/menu-icon-light.png');
 			background-image: url('./images/menu-icon-light.svg');
 			background-size: 100% 100%;
 
 			@include transition-property(transform);
-			@include transition-duration(0.5s);
+  			@include transition-duration(0.5s);
 		}
 	}
 
@@ -411,10 +419,7 @@ a:hover {
 		margin: 35px auto 0;
 		width: 102px;
 		height: 102px;
-		background-color: transparent;
-		background-image: url('./images/view-events.png');
-		background-repeat: no-repeat;
-		background-size: 100% 100%;
+		background: transparent url('./images/view-events.png') no-repeat;
 		display: block;
 		text-align: center;
 	}
@@ -428,7 +433,7 @@ div.about {
 
 	a {
 		font-size: 1.2em;
-		color:#8cbfa6;
+		// color:#8cbfa6;
 	}
 	
 	em {
@@ -501,7 +506,7 @@ div.breweries {
 		position: absolute;
 		top: 300px;
 		padding-left: 40px;
-		width: 205px;
+		width: 207px;
 		display: none;
 
 		a,
@@ -537,12 +542,22 @@ div.bar-info {
 ----------------------------------------------- */
 div.bus-tours {
 	.page-content {
+		a,
+		a:hover,
+		a:visited {
+			font-size: 1.0em;
+		}
+
 		ul {
 			padding-left: 15px;
 			list-style-type: disc;
 
 			li {
-				font-size: 1.0em;
+				a,
+				a:hover,
+				a:visited {
+					font-size: 0.8em;
+				}
 			}
 		}
 	}
@@ -733,7 +748,14 @@ div.faq {
 /* =Sponsors
 ----------------------------------------------- */
 div.sponsors {
-	div.page-content {		
+	div.page-content {
+		a,
+		a:hover,
+		a:visited {
+			border: none;
+			font-size: 1.0em;
+			text-decoration: underline;
+		}
 
 		.column {
 			margin-top: 50px;
@@ -753,11 +775,13 @@ div.sponsors {
 				text-align: right;
 			}
 
-			a,
-			a:hover,
-			a:visited {
-				border: none;
-			}
+			// a,
+			// a:hover,
+			// a:visited {
+			// 	border: none;
+			// 	font-size: 1.0em;
+			// 	text-decoration: underline;
+			// }
 		}
 	}
 }
