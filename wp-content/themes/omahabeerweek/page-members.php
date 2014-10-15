@@ -99,7 +99,7 @@ $members = $wp_user_search->get_results();
 	        		'scrollTop': $('#' + $(this).data('id'), 'div.bars').offset().top - $('#branding').outerHeight() - $('div.bars header').outerHeight()
 				}, 750);
 			});
-			
+
 			if (!IS_MOBILE && $(window).innerWidth() > 1024) {
 				$('div.list', 'div.bars').delay(750).fadeIn();
 			};

@@ -11,7 +11,7 @@
 ?>
 	</div><!-- #main -->
 
-	<script src="<?php echo get_template_directory_uri(); ?>/js/script.js?v=1.6" type="text/javascript"></script>
+	<script src="<?php echo get_template_directory_uri(); ?>/js/script.js?v=2015.1" type="text/javascript"></script>
 	<script type="text/javascript">
 	  var _gaq = _gaq || [];
 	  _gaq.push(['_setAccount', 'UA-36674375-1']);

@@ -38,7 +38,7 @@ $detect = new Mobile_Detect();
 
 	?>
 </title>
-<link rel="shortcut icon" href="<?php bloginfo('url'); ?>/favicon.png?v=2014">
+<link rel="shortcut icon" href="<?php bloginfo('url'); ?>/favicon.png?v=2015">
 <link rel="profile" href="http://gmpg.org/xfn/11" />
 <link href='http://fonts.googleapis.com/css?family=Alfa+Slab+One|Open+Sans:400,800' rel='stylesheet' type='text/css'>
 <!--[if lt IE 9]>
@@ -55,7 +55,7 @@ $detect = new Mobile_Detect();
 <script src="<?php echo $template_directory_uri ?>/js/lib/jquery.countdown.js" type="text/javascript"></script>
 <script src="<?php echo $template_directory_uri ?>/js/lib/jquery.address-1.5.min.js" type="text/javascript"></script>
 <script src="<?php echo $template_directory_uri ?>/js/lib/jquery.imagesloaded.min.js" type="text/javascript"></script>
-<link href="<?php echo $template_directory_uri ?>/style.css?v=1.6" rel='stylesheet' />
+<link href="<?php echo $template_directory_uri ?>/style.css?v=2015.1" rel='stylesheet' />
 
 </head>
 
@@ -73,16 +73,16 @@ $detect = new Mobile_Detect();
 				<div class="arrow"></div>
 				<a id="selected-page" href="#" class="">HOME</a>
 				<a href="<?php bloginfo('url'); ?>/">HOME</a>
-				<a href="<?php bloginfo('url'); ?>/#/events" data-path="/events">EVENTS</a>
+				<!--<a href="<?php bloginfo('url'); ?>/#/events" data-path="/events">EVENTS</a>-->
 				<a href="<?php bloginfo('url'); ?>/#/about" data-path="/about">ABOUT</a>
-				<a href="<?php bloginfo('url'); ?>/#/tours" data-path="/tours">BUS</a>
+				<a href="<?php bloginfo('url'); ?>/#/tours" data-path="/tours">TOURS</a>
 				<a href="<?php bloginfo('url'); ?>/#/members" data-path="/members">MEMBERS</a>
 				<a href="<?php bloginfo('url'); ?>/#/faq" data-path="/faq">FAQ</a>
 				<a href="<?php bloginfo('url'); ?>/#/sponsors" data-path="/sponsors">SPONSORS</a>
 			</div>
 			<?php else: ?>
 			<a href="<?php bloginfo('url'); ?>/#/about">About</a>
-			<a href="<?php bloginfo('url'); ?>/#/tours">Bus</a>
+			<a href="<?php bloginfo('url'); ?>/#/tours">Tours</a>
 			<a href="<?php bloginfo('url'); ?>/#/members">Members</a>
 			<a href="<?php bloginfo('url'); ?>/#/faq">FAQ</a>
 			<a href="<?php bloginfo('url'); ?>/#/sponsors">Sponsors</a>
