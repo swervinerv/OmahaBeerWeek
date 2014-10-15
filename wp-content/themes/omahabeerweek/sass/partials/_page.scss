@@ -396,9 +396,7 @@ a:visited {
 	#countdown {
 		margin-top: 30px;
 		width: 100%;
-//		font-family: 'heroic_condensedmedium', sans-serif;
         @include text-shadow(0px 2px 0px rgba(0, 0, 0, 1));
-		filter: dropshadow(color=#000000, offx=0, offy=4);
 		text-align: center;
 		
 		.countdown_section {
