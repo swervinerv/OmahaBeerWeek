@@ -10,7 +10,6 @@
 body, select, input, textarea {
   color: $font-color;
   // Set your base font here, to apply evenly
-  // font-family: Georgia, serif;
 }
 
 //-----------------------------------
@@ -34,7 +33,7 @@ table, caption, tbody, tfoot, thead, tr, th, td {
 	outline: 0;
 	padding: 0;
 	vertical-align: baseline;
-	color: #f0e7c9;
+	color: #ffffff;
 }
 a:focus {/* remember to define focus styles! */
 	outline: none !important;
@@ -62,7 +61,7 @@ body, html {
 	width: 100%;
 	height: 100%;
 	line-height: 1;
-	background: #f0e7c9;
+	background: #bfc13f;
 }
 
 a img {
@@ -83,7 +82,7 @@ footer, header, hgroup, menu, nav, section {
 
 body, input, textarea {
 	color: #f0e7c9;
-	font: 15pt "Helvetica Neue", Helvetica, Arial, sans-serif;
+	font: 15pt 'Open Sans', Helvetica, Arial, sans-serif;
 }
 
 /* Headings */
@@ -101,20 +100,20 @@ h2 {
 h3 {
 	margin: 50px 0px 20px;
 	font-size: 1.7em;
-	color: #979283;
 }
 
 /* Text elements */
 p {
+    color: #000000;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 0.8em;
+    line-height: 1.4em;
 	margin-bottom: 1.7em;
-	font-family: 'Karla', sans-serif;
-	font-size: 0.8em;
-	line-height: 1.4em;
 }
 ul {
 	margin: 0;
 	padding: 0;
-	font-family: 'Karla', sans-serif;
+	font-family: 'Open Sans', sans-serif;
 	font-size: 0.8em;
 	line-height: 1.4em;
 	list-style-type: none;
@@ -126,7 +125,7 @@ a:focus,
 a:active,
 a:hover,
 a:visited {
-	color: #f0e7c9;
+	color: #ffffff;
 	text-decoration: none;
 }
 
@@ -159,29 +158,29 @@ a:visited {
 	background-color: $content-background;
 
 	header {
+        background-color: $content-background;
 		position: absolute;
 		padding-top: 13px;
 		width: 100%;
-		background: #000000;
-		font-family: 'freestyle_script_stdregular' !important;
-		font-size: 9.5em;
-		line-height: 0.85em;
-		color: #f0e7c9;
+		font-family: 'Alfa Slab One' !important;
+		font-size: 3.5em;
+        letter-spacing: 0.1em;
+		line-height: 1.85em;
+		color: #394e25;
 		text-align: center;
 		z-index: 3;
-		border-bottom: solid 20px #f0e7c9;
 	}
 
 	div.page-content {
 		position: relative;
 		margin: 0 auto;
-		padding: 210px 0 20px;
+		padding: 110px 0 20px;
 		width: 815px;
 		height: auto;
 		text-align: left;
 	}
-	div.page-content h1,h2,h3,h4,h5,h6 {	
-		font-family: 'heroic_condensedbold';
+	div.page-content h1,h2,h3,h4,h5,h6 {
+        font-weight: 800;
 	}
 }
 
@@ -202,7 +201,7 @@ a:visited {
 	left: 0px;
 	width: 100%;
 	height: 77px;
-	background: #f0e7c9;
+	background: #394e25;
 	z-index: 10;
 
 	nav {
@@ -219,29 +218,29 @@ a:visited {
 			margin-top: 42px;
 			padding: 0px 8px;
 			display: inline-block;
-			font-family: 'heroic_condensedmedium';
-			font-size: 1.5em;
-			color: #3d3d3d;
+			font-family: 'Open Sans';
+			font-size: 1.0em;
+            font-weight: 800;
+			color: #ffffff;
 			letter-spacing: 0.067em;
 			text-transform: uppercase;
 		}
 		a:hover,
 		a.selected {
-			color: #dba137;
+			color: #bfc13f;
 		}
 	}
 
 	div#all-events {
 		position: absolute;
 		right: 0px;
-		top: 35px;
-		padding-left: 25px;
-		width: 190px;
-		height: 55px;
-		background: #dba137;
+		top: 40px;
+		padding-left: 20px;
+		width: 210px;
+		height: 50px;
+		background: #ffffff;
 		text-align: left;
 		overflow: hidden;
-		@include box-shadow(0px 8px 0px rgba(0, 0, 0, 0.75));
 		@include transition-property(height);
   		@include transition-duration(0.25s);
 
@@ -249,11 +248,11 @@ a:visited {
 			height: 285px;
 
 			a.title {
-				color: #3d3d3d;
+				color: #394e25;
 			}
 			a:hover,
 			a.title:hover {
-				color: #f0e7c9;
+				color: #bfc13f;
 			}
 
 			span {
@@ -262,22 +261,22 @@ a:visited {
 		}
 
 		a {
+            color: #394e25;
 			margin: 0;
 			padding: 0;
-			font-family: 'Karla', sans-serif;
+//			font-family: 'Karla', sans-serif;
 			font-size: 0.75em;
 			font-style: bold;
 		}
 		a.title {
-			margin-top: 10px;
-			// padding: 0 8px;
+            height: 32px;
+			margin-top: 14px;
 			width: 81%;
-			font-family: 'freestyle_script_stdregular';
-			font-size: 1.7em;
-			// background: transparent url('./images/events-menu-bg.png') no-repeat 135px 3px;
+			font-family: 'Alfa Slab One';
+			font-size: 1.0em;
 		}
 		a.title:hover {
-			color: #f0e7c9;
+			color: #bfc13f;
 		}
 
 		span {
@@ -287,7 +286,7 @@ a:visited {
 			display: block;
 			width: 30px;
 			height: 30px;
-			background-image: url('./images/menu-icon-light.png');
+//			background-image: url('./images/menu-icon-light.png');
 			background-image: url('./images/menu-icon-light.svg');
 			background-size: 100% 100%;
 
@@ -299,9 +298,9 @@ a:visited {
 	div.logo {
 		position: absolute;
 		left: 0px;
-		top: 2px;
-		width: 205px;
-		height: 214px;
+		top: 10px;
+		width: 185px;
+		height: 185px;
 
 		a {
 			margin: 0;
@@ -330,23 +329,23 @@ a:visited {
 	#celebrating {
 		margin: 0px auto;
 		width: 100%;
-		padding-top: 210px;
-		color: #f0e7c9;
+		padding-top: 230px;
 		text-align: center;
 
 		h1,
 		h2 {
-			font-family: 'freestyle_script_stdregular';
+			font-family: 'Alfa Slab One';
+            letter-spacing: 0.1em;
 		}
 		
 		h1 {
-			font-size: 9.5em;
-			@include text-shadow(0px 10px 0px rgba(0, 0, 0, 1));
+			font-size: 4.0em;
+			@include text-shadow(0px 3px 0px rgba(0, 0, 0, 1));
 		}
 		
 		h2 {
-			font-size: 4.3em;
-			@include text-shadow(0px 8px 0px rgba(0, 0, 0, 1));
+			font-size: 3.3em;
+			@include text-shadow(0px 2px 0px rgba(0, 0, 0, 1));
 			line-height: 0.8em;
 		}
 	}
@@ -361,7 +360,7 @@ a:visited {
 			margin: 0px 7px;
 			padding: 17px 20px 17px;
 			width: 100px;
-			background-color: #d9352c;
+			background-color: #ffffff;
 			vertical-align: middle;
 		}
 		
@@ -382,13 +381,13 @@ a:visited {
 		}
 		
 		a.facebook {
-			background: #f0e7c9 url('./images/facebook.png') no-repeat;
+			background: #ffffff url('./images/facebook.png') no-repeat;
 			background-image: url('./images/facebook.svg');
 			background-size: 100% 100%;
 		}
 		
 		a.twitter {
-			background: #f0e7c9 url('./images/twitter.png') no-repeat;
+			background: #ffffff url('./images/twitter.png') no-repeat;
 			background-image: url('./images/twitter.svg');
 			background-size: 100% 100%;
 		}
@@ -397,14 +396,15 @@ a:visited {
 	#countdown {
 		margin-top: 30px;
 		width: 100%;
-		font-family: 'heroic_condensedmedium', sans-serif;
-		text-shadow: 0px 4px 0px #000000;
+//		font-family: 'heroic_condensedmedium', sans-serif;
+        @include text-shadow(0px 2px 0px rgba(0, 0, 0, 1));
 		filter: dropshadow(color=#000000, offx=0, offy=4);
 		text-align: center;
 		
 		.countdown_section {
 			padding: 0 5px 0 0;
-			font-size: 1.9em;
+			font-size: 1.4em;
+            font-weight: 400;
 			display: inline-block;
 		}
 
@@ -498,7 +498,6 @@ div.breweries {
 		}
 		p {
 			margin: 1.0em 0;
-			color: #f0e7c9;
 		}
 	}
 
@@ -659,16 +658,14 @@ div.events {
 				h2 {
 					margin-top: 50px;
 					width: 100%;
-					font-family: 'freestyle_script_stdregular';
+//					font-family: 'freestyle_script_stdregular';
 					font-size: 13.0em;
 					line-height: 0.7em;
-					color: #f0e7c9;
 					text-align: center;
 				}
 				h3 {
 					margin-top: 0;
 					padding-top: 30px;
-					color: #f0e7c9;
 					letter-spacing: 0.0675em;
 				}
 			}
@@ -685,17 +682,16 @@ div.events {
 
 			span {
 				width: 100%;
-				background: #f0e7c9;
+				background: #ffffff;
 			}
 
 			h2,
 			h3 {
-				font-family: 'freestyle_script_stdregular';
+//				font-family: 'freestyle_script_stdregular';
 			}
 			h2 {
 				font-size: 1.2em;
 				line-height: 0.4em;
-				color: #f0e7c9;
 			}
 			h3 {
 				margin: 0;
@@ -723,7 +719,6 @@ div.events {
 				margin: 8px 0;
 				color: #3d3d3d;
 				display: inline-block;
-				font-family: 'karlabold';
 			}
 		}
 	}
@@ -737,7 +732,6 @@ div.faq {
 	a:visited {
 		text-decoration: underline;
 		font-size: 1.0em;
-		color: #f0e7C9;
 	}
 
 	p {
@@ -774,14 +768,6 @@ div.sponsors {
 			&.right {
 				text-align: right;
 			}
-
-			// a,
-			// a:hover,
-			// a:visited {
-			// 	border: none;
-			// 	font-size: 1.0em;
-			// 	text-decoration: underline;
-			// }
 		}
 	}
 }
@@ -800,10 +786,9 @@ div.sponsors {
 		text-align: center;
 
 		h2 {
-			font-size: 7.5em;
-			line-height: 0.85em;
-			font-family: 'freestyle_script_stdregular' !important;
-			color: #f0e7c9;
+			font-size: 4.5em;
+			line-height: 1.85em;
+			font-family: 'Alfa Slab One' !important;
 		}
 	}
 
@@ -811,7 +796,6 @@ div.sponsors {
 		padding-top: 50px;
 		margin: 0 auto;
 		width: 815px;
-		color: #3d3d3d;
 		font-size: 2.0em;
 	}
 }

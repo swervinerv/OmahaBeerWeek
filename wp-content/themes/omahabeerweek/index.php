@@ -26,26 +26,17 @@ if ( !isset( $_SESSION['home_images'] ) ) {
 
 	if ($detect->isMobile() && !$detect->isTablet()) {
 		$_SESSION['home_images'] = array(
-			'beercorner480' => 'http://dgllvx19ffpgh.cloudfront.net/beer-corner-480.jpg',
-			'jakes480' => 'http://dgllvx19ffpgh.cloudfront.net/jakes-480.jpg',
-			'krug480' => 'http://dgllvx19ffpgh.cloudfront.net/krug-480.jpg',
-			'moon480' => 'http://dgllvx19ffpgh.cloudfront.net/moon-480.jpg'
+			'krug480' => 'http://dgllvx19ffpgh.cloudfront.net/krug-480.jpg'
 		);
 	}
 	else if ($detect->isTablet()) {
 		$_SESSION['home_images'] = array(
-			'beercorner1024' => 'http://dgllvx19ffpgh.cloudfront.net/beer-corner-1024.jpg',
-			'jakes1024' => 'http://dgllvx19ffpgh.cloudfront.net/jakes-1024.jpg',
-			'krug1024' => 'http://dgllvx19ffpgh.cloudfront.net/krug-1024.jpg',
-			'moon1024' => 'http://dgllvx19ffpgh.cloudfront.net/moon-1024.jpg'
+			'krug1024' => 'http://dgllvx19ffpgh.cloudfront.net/krug-1024.jpg'
 		);
 	}
 	else {
 		$_SESSION['home_images'] = array(
-			'beercorner' => 'http://dgllvx19ffpgh.cloudfront.net/beer-corner.jpg',
-			'jakes' => 'http://dgllvx19ffpgh.cloudfront.net/jakes.jpg',
-			'krug' => 'http://dgllvx19ffpgh.cloudfront.net/krug.jpg',
-			'moon' => 'http://dgllvx19ffpgh.cloudfront.net/moon.jpg'
+			'krug' => 'http://dgllvx19ffpgh.cloudfront.net/krug.jpg'
 		);
 	}
 
@@ -77,7 +68,7 @@ get_header();
 	<div id="home">
 		<div id="celebrating">
 			<h1>Celebrating Craft Beer</h1>
-			<h2>February 14-23 2014</h2>
+			<h2>February 13-22 2015</h2>
 		</div>
 
 		<?php if (!$is_mobile): ?>
@@ -90,13 +81,13 @@ get_header();
 		</div>
 
 		<?php if (!$is_mobile): ?>
-		<a href="#/events" id="view-events"></a>
+		<!-- <a href="#/events" id="view-events"></a> -->
 		<?php endif; ?>
 
 		<img id="home-image" src="<?php echo $home_image_url ?>" />
 	</div>
 </div>
 
-<?php if ( !$detect->isMobile() || $detect->isTablet() ) { get_template_part( 'page', 'events' ); } ?>
+<?php //if ( !$detect->isMobile() || $detect->isTablet() ) { get_template_part( 'page', 'events' ); } ?>
 
 <?php get_footer(); ?>

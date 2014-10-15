@@ -40,7 +40,7 @@ $detect = new Mobile_Detect();
 </title>
 <link rel="shortcut icon" href="<?php bloginfo('url'); ?>/favicon.png?v=2014">
 <link rel="profile" href="http://gmpg.org/xfn/11" />
-<link href='http://fonts.googleapis.com/css?family=Karla:400,700,700italic' rel='stylesheet' type='text/css'>
+<link href='http://fonts.googleapis.com/css?family=Alfa+Slab+One|Open+Sans:400,800' rel='stylesheet' type='text/css'>
 <!--[if lt IE 9]>
 <script src="<?php echo $template_directory_uri ?>/js/html5.js" type="text/javascript"></script>
 <![endif]-->
@@ -89,7 +89,7 @@ $detect = new Mobile_Detect();
 			<?php endif; ?>
 
 			<?php if (!$detect->isMobile() && !$detect->isTablet()): ?>
-			<div id="all-events">
+			<!--<div id="all-events">
 				<span></span>
 				<a href="#" class="title">All Events</a>
 				<a href="#/15" data-id="14">FRIDAY 02.14.14</a>
@@ -102,7 +102,7 @@ $detect = new Mobile_Detect();
 				<a href="#/22" data-id="21">FRIDAY 02.21.14</a>
 				<a href="#/23" data-id="22">SATURDAY 02.22.14</a>
 				<a href="#/24" data-id="23">SUNDAY 02.23.14</a>
-			</div>
+			</div>-->
 			<?php endif; ?>
 		</nav>
 	</header>

@@ -30,7 +30,7 @@ var showEventsAuthorId = 0;
 				});
 
 				if ($('#countdown').length > 0) {
-					var austDay = new Date(2014, 1, 14);
+					var austDay = new Date(2015, 1, 13);
 					$('#countdown').countdown({
 						until: austDay,
 						layout: '<span class="countdown_section">{d<}{dn} {dl} {d>}</span> <span class="countdown_section">{hn} {hl}</span> <span class="countdown_section">{mn} {ml}</span> <span class="countdown_section">{sn} {sl}</span>'
