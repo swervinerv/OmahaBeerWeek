@@ -224,10 +224,8 @@ function obw_events_meta () {
 	// $time_format_ms = "ii";
 	 
 	// - populate today if empty, 00:00 for time -
-	 
 	if ($meta_sd == null) {
-		// $meta_sd = time();
-		$meta_sd = strtotime('2014-02-14');
+		$meta_sd = strtotime('2015-02-13');
 		$meta_ed = $meta_sd;
 		$meta_st = 	0;
 		$meta_et = 0;
