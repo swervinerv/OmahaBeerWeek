@@ -41,12 +41,6 @@ $members = $wp_user_search->get_results();
 			</div>
 		<?php endforeach; ?>
 		</div>
-		<div class="list">
-			<span>All Members</span>
-			<?php foreach ( $members as $member ) : ?>
-			    <a href="#" data-id="<?php echo $member->ID; ?>"><?php echo get_user_meta( $member->ID, 'nickname', true ); ?></a>
-			<?php endforeach; ?>
-		</div>
 
 		<div class="clear"></div>
 	</div>
@@ -57,11 +51,11 @@ $members = $wp_user_search->get_results();
 				'left': ($('div.descriptions', 'div.bars').width()).toString() + 'px'
 			});
 
-			if ($('div.bar-info', 'div.descriptions').last().height() < ($(window).innerHeight() - $('#branding').outerHeight() - $('div.bars header').outerHeight())) {
-				$('div.bar-info', 'div.descriptions').last().css({
-					'min-height': ($(window).innerHeight() - $('#branding').outerHeight() - $('div.bars header').outerHeight()).toString() + 'px'
-				});
-			}
+			// if ($('div.bar-info', 'div.descriptions').last().height() < ($(window).innerHeight() - $('#branding').outerHeight() - $('div.bars header').outerHeight())) {
+			// 	$('div.bar-info', 'div.descriptions').last().css({
+			// 		'min-height': ($(window).innerHeight() - $('#branding').outerHeight() - $('div.bars header').outerHeight()).toString() + 'px'
+			// 	});
+			// }
 
 			$(document).bind('page_animating', function (e) {
 				$('div.list', 'div.bars').fadeOut('fast');

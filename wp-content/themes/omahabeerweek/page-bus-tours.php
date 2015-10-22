@@ -5,16 +5,26 @@ Template Name: Bus Tours
 ?>
 
 <div id="content" class="bus-tours">
-	<header>
-		Bus
+	<header id="tours">
+		Tours
 	</header>
 	<div class="page-content">
 		<?php if ( have_posts() ) : ?>
 			<?php the_post(); ?>		
 				<?php the_content(); ?>
 		<?php endif; ?>
-		<!-- <p style="text-align: center;">
-			<img src="http://dgllvx19ffpgh.cloudfront.net/craft-beer-bus-tour.png" alt="Craft Beer Bus Tour" />
-		</p> -->
 	</div>
+	<script type="text/javascript">
+		$(function(){
+			$('[data-role="sub-nav"]').click(function(e) {
+				e.preventDefault();
+
+				$('html, body').animate({
+					scrollTop: $('[data-role="' + $(this).attr('href') + '"]').offset().top - $('#branding').outerHeight() - $('#tours').outerHeight()
+				}, 1000);
+
+				console.log($(this).attr('href'));
+			});
+		});
+	</script>
 </div>

@@ -26,17 +26,44 @@ if ( !isset( $_SESSION['home_images'] ) ) {
 
 	if ($detect->isMobile() && !$detect->isTablet()) {
 		$_SESSION['home_images'] = array(
-			'krug480' => 'http://dgllvx19ffpgh.cloudfront.net/krug-480.jpg'
+			'beercade480' => 'http://dgllvx19ffpgh.cloudfront.net/beercade-480.jpg',
+			'borgata480' => 'http://dgllvx19ffpgh.cloudfront.net/borgata-480.jpg',
+			'brix480' => 'http://dgllvx19ffpgh.cloudfront.net/brix-480.jpg',
+			'huber480' => 'http://dgllvx19ffpgh.cloudfront.net/huber-480.jpg',
+			'infusion480' => 'http://dgllvx19ffpgh.cloudfront.net/infusion-480.jpg',
+			'jakes480' => 'http://dgllvx19ffpgh.cloudfront.net/jakes-480.jpg',
+			'krug480' => 'http://dgllvx19ffpgh.cloudfront.net/krug-480.jpg',
+			'nbc480' => 'http://dgllvx19ffpgh.cloudfront.net/nbc-480.jpg',
+			'taps480' => 'http://dgllvx19ffpgh.cloudfront.net/taps-480.jpg',
+			'upstream480' => 'http://dgllvx19ffpgh.cloudfront.net/upstream-480.jpg'
 		);
 	}
 	else if ($detect->isTablet()) {
 		$_SESSION['home_images'] = array(
-			'krug1024' => 'http://dgllvx19ffpgh.cloudfront.net/krug-1024.jpg'
+			'beercade1024' => 'http://dgllvx19ffpgh.cloudfront.net/beercade-1024.jpg',
+			'borgata1024' => 'http://dgllvx19ffpgh.cloudfront.net/borgata-1024.jpg',
+			'brix1024' => 'http://dgllvx19ffpgh.cloudfront.net/brix-1024.jpg',
+			'huber1024' => 'http://dgllvx19ffpgh.cloudfront.net/huber-1024.jpg',
+			'infusion1024' => 'http://dgllvx19ffpgh.cloudfront.net/infusion-1024.jpg',
+			'jakes1024' => 'http://dgllvx19ffpgh.cloudfront.net/jakes-1024.jpg',
+			'krug1024' => 'http://dgllvx19ffpgh.cloudfront.net/krug-1024.jpg',
+			'nbc1024' => 'http://dgllvx19ffpgh.cloudfront.net/nbc-1024.jpg',
+			'taps1024' => 'http://dgllvx19ffpgh.cloudfront.net/taps-1024.jpg',
+			'upstream1024' => 'http://dgllvx19ffpgh.cloudfront.net/upstream-1024.jpg'
 		);
 	}
 	else {
 		$_SESSION['home_images'] = array(
-			'krug' => 'http://dgllvx19ffpgh.cloudfront.net/krug.jpg'
+			'beercade' => 'http://dgllvx19ffpgh.cloudfront.net/beercade.jpg',
+			'borgata' => 'http://dgllvx19ffpgh.cloudfront.net/borgata.jpg',
+			'brix' => 'http://dgllvx19ffpgh.cloudfront.net/brix.jpg',
+			'huber' => 'http://dgllvx19ffpgh.cloudfront.net/huber.jpg',
+			'infusion' => 'http://dgllvx19ffpgh.cloudfront.net/infusion.jpg',
+			'jakes' => 'http://dgllvx19ffpgh.cloudfront.net/jakes.jpg',
+			'krug' => 'http://dgllvx19ffpgh.cloudfront.net/krug.jpg',
+			'nbc' => 'http://dgllvx19ffpgh.cloudfront.net/nbc.jpg',
+			'taps' => 'http://dgllvx19ffpgh.cloudfront.net/taps.jpg',
+			'upstream' => 'http://dgllvx19ffpgh.cloudfront.net/upstream.jpg'
 		);
 	}
 
@@ -81,13 +108,13 @@ get_header();
 		</div>
 
 		<?php if (!$is_mobile): ?>
-		<!-- <a href="#/events" id="view-events"></a> -->
+		<a href="#/events" id="view-events"></a>
 		<?php endif; ?>
 
 		<img id="home-image" src="<?php echo $home_image_url ?>" />
 	</div>
 </div>
 
-<?php //if ( !$detect->isMobile() || $detect->isTablet() ) { get_template_part( 'page', 'events' ); } ?>
+<?php if ( !$detect->isMobile() || $detect->isTablet() ) { get_template_part( 'page', 'events' ); } ?>
 
 <?php get_footer(); ?>

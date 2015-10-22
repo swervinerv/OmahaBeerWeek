@@ -55,7 +55,7 @@ $detect = new Mobile_Detect();
 <script src="<?php echo $template_directory_uri ?>/js/lib/jquery.countdown.js" type="text/javascript"></script>
 <script src="<?php echo $template_directory_uri ?>/js/lib/jquery.address-1.5.min.js" type="text/javascript"></script>
 <script src="<?php echo $template_directory_uri ?>/js/lib/jquery.imagesloaded.min.js" type="text/javascript"></script>
-<link href="<?php echo $template_directory_uri ?>/style.css?v=2015.1" rel='stylesheet' />
+<link href="<?php echo $template_directory_uri ?>/style.css?v=2015.3.6" rel='stylesheet' />
 
 </head>
 
@@ -73,7 +73,7 @@ $detect = new Mobile_Detect();
 				<div class="arrow"></div>
 				<a id="selected-page" href="#" class="">HOME</a>
 				<a href="<?php bloginfo('url'); ?>/">HOME</a>
-				<!--<a href="<?php bloginfo('url'); ?>/#/events" data-path="/events">EVENTS</a>-->
+				<a href="<?php bloginfo('url'); ?>/#/events" data-path="/events">EVENTS</a>
 				<a href="<?php bloginfo('url'); ?>/#/about" data-path="/about">ABOUT</a>
 				<a href="<?php bloginfo('url'); ?>/#/tours" data-path="/tours">TOURS</a>
 				<a href="<?php bloginfo('url'); ?>/#/members" data-path="/members">MEMBERS</a>
@@ -89,20 +89,20 @@ $detect = new Mobile_Detect();
 			<?php endif; ?>
 
 			<?php if (!$detect->isMobile() && !$detect->isTablet()): ?>
-			<!--<div id="all-events">
+			<div id="all-events">
 				<span></span>
 				<a href="#" class="title">All Events</a>
-				<a href="#/15" data-id="14">FRIDAY 02.14.14</a>
-				<a href="#/16" data-id="15">SATURDAY 02.15.14</a>
-				<a href="#/17" data-id="16">SUNDAY 02.16.14</a>
-				<a href="#/18" data-id="17">MONDAY 02.17.14</a>
-				<a href="#/19" data-id="18">TUESDAY 02.18.14</a>
-				<a href="#/20" data-id="19">WEDNESDAY 02.19.14</a>
-				<a href="#/21" data-id="20">THURSDAY 02.20.14</a>
-				<a href="#/22" data-id="21">FRIDAY 02.21.14</a>
-				<a href="#/23" data-id="22">SATURDAY 02.22.14</a>
-				<a href="#/24" data-id="23">SUNDAY 02.23.14</a>
-			</div>-->
+				<a href="#/15" data-id="13">FRIDAY 02.13.15</a>
+				<a href="#/16" data-id="14">SATURDAY 02.14.15</a>
+				<a href="#/17" data-id="15">SUNDAY 02.15.15</a>
+				<a href="#/18" data-id="16">MONDAY 02.16.15</a>
+				<a href="#/19" data-id="17">TUESDAY 02.17.15</a>
+				<a href="#/20" data-id="18">WEDNESDAY 02.18.15</a>
+				<a href="#/21" data-id="19">THURSDAY 02.19.15</a>
+				<a href="#/22" data-id="20">FRIDAY 02.20.15</a>
+				<a href="#/23" data-id="21">SATURDAY 02.21.15</a>
+				<a href="#/24" data-id="22">SUNDAY 02.22.15</a>
+			</div>
 			<?php endif; ?>
 		</nav>
 	</header>

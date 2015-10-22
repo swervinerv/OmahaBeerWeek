@@ -16,3 +16,4 @@ sitemap.xml.gz
 .sass-cache
 node_modules
 *.sql
+fire_app_log.txt

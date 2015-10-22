@@ -245,7 +245,7 @@ a:visited {
   		@include transition-duration(0.25s);
 
 		&.open {
-			height: 285px;
+			height: 305px;
 
 			a.title {
 				color: #394e25;
@@ -264,9 +264,9 @@ a:visited {
             color: #394e25;
 			margin: 0;
 			padding: 0;
-//			font-family: 'Karla', sans-serif;
 			font-size: 0.75em;
 			font-style: bold;
+			font-weight: 400;
 		}
 		a.title {
             height: 32px;
@@ -414,12 +414,13 @@ a:visited {
 	}
 
 	#view-events {
-		margin: 35px auto 0;
-		width: 102px;
-		height: 102px;
-		background: transparent url('./images/view-events.png') no-repeat;
+		background: transparent url('./images/menu-icon-light.svg') no-repeat;
+		background-size: 100%;
 		display: block;
+		height: 90px;
+		margin: 35px auto 0;
 		text-align: center;
+		width: 90px;
 	}
 }
 
@@ -452,6 +453,10 @@ div.about {
 		width: 33%;
 		display: inline-block;
 		vertical-align: top;
+
+		&.double-wide {
+			width: 66%;
+		}
 
 		h3 {
 			margin-top: 10px;
@@ -539,10 +544,23 @@ div.bar-info {
 ----------------------------------------------- */
 div.bus-tours {
 	.page-content {
+		padding-top: 140px !important;
+
 		a,
 		a:hover,
 		a:visited {
-			font-size: 1.0em;
+			font-size: 0.8rem;
+		}
+
+		.divider {
+			border-top: dashed 2px #000000;
+			margin-top: 20px;
+		}
+
+		strong {
+			color: #000000;
+			font-size: 0.8rem;
+			font-weight: 800;
 		}
 
 		ul {
@@ -550,12 +568,21 @@ div.bus-tours {
 			list-style-type: disc;
 
 			li {
-				a,
-				a:hover,
-				a:visited {
-					font-size: 0.8em;
+				color: #000000;
+				font-size: 0.8rem;
+
+				ul {
+					list-style-type: none;
 				}
 			}
+		}
+
+		.column {
+			display: inline-block;
+			margin-bottom: 25px;
+			padding: 0 1%;
+			vertical-align: top;
+			width: 47%;
 		}
 	}
 }
@@ -567,13 +594,11 @@ div.events {
 		position: relative;
 		width: 100%;
 		min-height: 100%;
-		background: #3d3d3d;
 
 		section {
 			position: relative;
 			padding-top: 180px;
 			width: 100%;
-			border-bottom: solid 2px #3d3d3d;
 
 			div {
 				margin: 0 auto;
@@ -584,33 +609,32 @@ div.events {
 				position: absolute;
 				top: 0px;
 				padding: 0;
-				font-size: 3.8em;
+				font-size: 1.0rem;
 
 				h2,
 				h3 {
-					font-family: 'freestyle_script_stdregular';
+					color: #394e25;
+					font-family: 'Alfa Slab One';
 				}
 
 				h2 {
-					margin: 0;
-					margin-bottom: 30px;
-					line-height: 0.4em;
+					font-size: 4.0em;
+					line-height: 1.0em;
+					padding-bottom: 10px;
 				}
 
 				h3 {
 					position: relative;
 					margin: 0;
 					padding: 10px 0;
-					font-size: 1.0em;
 					z-index: 1;
 				}
 			}
 
 			.event-detail {
 				h3 {
-					margin-top: 70px;
-					margin-bottom: 0;
-					color: #979283;
+					font-size: 1.3em;
+					margin: 0;
 				}
 
 				p {
@@ -622,8 +646,6 @@ div.events {
 					a:hover,
 					a:visited {
 						margin-top: 5px;
-						font-family: 'karlabold';
-						color: #f0e7c9;
 						display: inline-block;
 						text-decoration: underline;
 					}
@@ -631,14 +653,6 @@ div.events {
 
 				.links {
 					margin-bottom: 10px;
-
-					a,
-					a:hover,
-					a:visited {
-						font-family: 'freestyle_script_stdregular';
-						color: #dba137;
-						font-size: 2.0em;
-					}
 				}
 			}
 		}
@@ -741,30 +755,28 @@ div.faq {
 ----------------------------------------------- */
 div.sponsors {
 	div.page-content {
+		padding: 140px 0 0 !important;
+		text-align: center !important;
+
+		&.no-top {
+			padding-top: 0 !important;
+		}
+
 		a,
 		a:hover,
 		a:visited {
-			border: none;
-			font-size: 1.0em;
-			text-decoration: underline;
-		}
-
-		.column {
-			margin-top: 50px;
-			width: 49%;
+			// background-color: #ffffff;
+			border-radius: 2px;
 			display: inline-block;
-			text-align: center;
+			height: 195px;
+			margin: 0 2px 4px;
+			width: 195px;
 
-			&.full {
-				width: 100%;
-			}
-
-			&.left {
-				text-align: left;
-			}
-
-			&.right {
-				text-align: right;
+			img {
+				display: block;
+				max-height: 100%;
+				max-width: 100%;
+				margin: 0 auto;
 			}
 		}
 	}
