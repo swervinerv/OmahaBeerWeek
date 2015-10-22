@@ -1,4 +1,5 @@
 # Require any additional compass plugins here.
+require 'compass-h5bp'
 
 http_path = "/"
 css_dir = ""

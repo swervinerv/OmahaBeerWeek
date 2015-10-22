@@ -38,9 +38,9 @@ $detect = new Mobile_Detect();
 
 	?>
 </title>
-<link rel="shortcut icon" href="<?php bloginfo('url'); ?>/favicon.png">
+<link rel="shortcut icon" href="<?php bloginfo('url'); ?>/favicon.png?v=2015">
 <link rel="profile" href="http://gmpg.org/xfn/11" />
-<link href='http://fonts.googleapis.com/css?family=Karla:400,700,700italic' rel='stylesheet' type='text/css'>
+<link href='http://fonts.googleapis.com/css?family=Alfa+Slab+One|Open+Sans:400,800' rel='stylesheet' type='text/css'>
 <!--[if lt IE 9]>
 <script src="<?php echo $template_directory_uri ?>/js/html5.js" type="text/javascript"></script>
 <![endif]-->
@@ -55,7 +55,7 @@ $detect = new Mobile_Detect();
 <script src="<?php echo $template_directory_uri ?>/js/lib/jquery.countdown.js" type="text/javascript"></script>
 <script src="<?php echo $template_directory_uri ?>/js/lib/jquery.address-1.5.min.js" type="text/javascript"></script>
 <script src="<?php echo $template_directory_uri ?>/js/lib/jquery.imagesloaded.min.js" type="text/javascript"></script>
-<link href="<?php echo $template_directory_uri ?>/style.css?v=1.4" rel='stylesheet' />
+<link href="<?php echo $template_directory_uri ?>/style.css?v=2015.3.6" rel='stylesheet' />
 
 </head>
 
@@ -73,36 +73,36 @@ $detect = new Mobile_Detect();
 				<div class="arrow"></div>
 				<a id="selected-page" href="#" class="">HOME</a>
 				<a href="<?php bloginfo('url'); ?>/">HOME</a>
-				<a href="<?php bloginfo('url'); ?>/#/events" data-path="/events">PAST EVENTS</a>
+				<a href="<?php bloginfo('url'); ?>/#/events" data-path="/events">EVENTS</a>
 				<a href="<?php bloginfo('url'); ?>/#/about" data-path="/about">ABOUT</a>
-				<a href="<?php bloginfo('url'); ?>/#/tours" data-path="/tours">BUS</a>
+				<a href="<?php bloginfo('url'); ?>/#/tours" data-path="/tours">TOURS</a>
 				<a href="<?php bloginfo('url'); ?>/#/members" data-path="/members">MEMBERS</a>
 				<a href="<?php bloginfo('url'); ?>/#/faq" data-path="/faq">FAQ</a>
 				<a href="<?php bloginfo('url'); ?>/#/sponsors" data-path="/sponsors">SPONSORS</a>
 			</div>
 			<?php else: ?>
 			<a href="<?php bloginfo('url'); ?>/#/about">About</a>
-			<a href="<?php bloginfo('url'); ?>/#/events">Past Events</a>
-			<a href="<?php bloginfo('url'); ?>/#/tours">Bus</a>
+			<a href="<?php bloginfo('url'); ?>/#/tours">Tours</a>
 			<a href="<?php bloginfo('url'); ?>/#/members">Members</a>
 			<a href="<?php bloginfo('url'); ?>/#/faq">FAQ</a>
 			<a href="<?php bloginfo('url'); ?>/#/sponsors">Sponsors</a>
 			<?php endif; ?>
 
 			<?php if (!$detect->isMobile() && !$detect->isTablet()): ?>
-			<!-- <div id="all-events">
+			<div id="all-events">
+				<span></span>
 				<a href="#" class="title">All Events</a>
-				<a href="#/15" data-id="15">FRIDAY 02.15.13</a>
-				<a href="#/16" data-id="16">SATURDAY 02.16.13</a>
-				<a href="#/17" data-id="17">SUNDAY 02.17.13</a>
-				<a href="#/18" data-id="18">MONDAY 02.18.13</a>
-				<a href="#/19" data-id="19">TUESDAY 02.19.13</a>
-				<a href="#/20" data-id="20">WEDNESDAY 02.20.13</a>
-				<a href="#/21" data-id="21">THURSDAY 02.21.13</a>
-				<a href="#/22" data-id="22">FRIDAY 02.22.13</a>
-				<a href="#/23" data-id="23">SATURDAY 02.23.13</a>
-				<a href="#/24" data-id="24">SUNDAY 02.24.13</a>
-			</div> -->
+				<a href="#/15" data-id="13">FRIDAY 02.13.15</a>
+				<a href="#/16" data-id="14">SATURDAY 02.14.15</a>
+				<a href="#/17" data-id="15">SUNDAY 02.15.15</a>
+				<a href="#/18" data-id="16">MONDAY 02.16.15</a>
+				<a href="#/19" data-id="17">TUESDAY 02.17.15</a>
+				<a href="#/20" data-id="18">WEDNESDAY 02.18.15</a>
+				<a href="#/21" data-id="19">THURSDAY 02.19.15</a>
+				<a href="#/22" data-id="20">FRIDAY 02.20.15</a>
+				<a href="#/23" data-id="21">SATURDAY 02.21.15</a>
+				<a href="#/24" data-id="22">SUNDAY 02.22.15</a>
+			</div>
 			<?php endif; ?>
 		</nav>
 	</header>

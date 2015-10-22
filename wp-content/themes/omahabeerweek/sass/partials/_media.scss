@@ -5,7 +5,7 @@
 // ========================================================================== */
 
 /* Smartphones (portrait) */
-@media only screen and (max-width : 480px) {
+@media only screen and (max-width : 768px) {
 	body {
 		min-height: 100%;
 	}
@@ -27,13 +27,13 @@
 				right: 0px;
 				padding: 0 0 0 15px;
 				height: 45px;
-				background: #f0e7c9;
+				background: #394e25;
 				overflow: hidden;
 				@include transition-property(height);
   				@include transition-duration(0.5s);
 
 				&.open {
-					height: 260px;
+					height: 230px;
 
 					.arrow {
 						@include rotate(180deg);
@@ -67,7 +67,7 @@
 				}
 
 				#selected-page {
-					padding: 9px 30px 0 0;
+					padding: 11px 30px 3px 0;
 				}
 			}
 		}
@@ -75,16 +75,7 @@
 		div.logo {
 			left: 5px;
 			width: 72px;
-			height: 77px;
-			// background: transparent url('./images/logo-640.png') no-repeat;
-			// background-size: cover;
-
-			// a {
-			// 	padding: 0;
-			// 	width: 100%;
-			// 	height: 100%;
-			// 	display: block;
-			// }
+			height: 72px;
 		}
 	}
 
@@ -123,18 +114,16 @@
 		#celebrating {
 			margin: 0 auto 30px;
 			padding-top: 50px;
-			font-family: 'freestyle_script_stdregular';
+			font-family: 'Alfa Slab One';
 
 			h1 {
-				font-size: 2.9em;
-				text-shadow: 0px 4px 0px #000000;
-				filter: dropshadow(color=#000000, offx=0, offy=4);
+				font-size: 1.9em;
+                @include text-shadow(0px 3px 0px rgba(0, 0, 0, 1));
 			}
 			h2 {
-				font-size: 2.3em;
-				text-shadow: 0px 2px 0px #000000;
-				filter: dropshadow(color=#000000, offx=0, offy=2);
-				line-height: 0.9em;
+				font-size: 1.2em;
+                @include text-shadow(0px 3px 0px rgba(0, 0, 0, 1));
+				line-height: 1.2em;
 			}
 		}
 
@@ -250,47 +239,41 @@
 					padding: 0;
 					width: auto;
 					height: auto;
-					background: #3d3d3d;
 					text-align: left;
 					line-height: 0.5em;
 					display: block;
-					border-bottom: solid 1px #6b6b6b;
 
 					a.events-back,
 					a.events-back:hover,
 					a.events-back:visited {
 						margin: 0;
-						padding: 0 0 0 20px;
+						padding: 1.5px 0 0 15px;
 						height: auto;
-						font-family: 'karlabold';
-						font-size: 0.4em;
+						font-size: 0.9em;
 						background: transparent url('./images/back-arrow.png') center left no-repeat;
-						color: #f0e7c9;
 					}
 
 					h3 {
-						margin: 0;
-						padding: 0;
+						margin: 0 0 10px;
 						height: auto;
-						font-size: 0.4em;
-						font-family: 'karlabold';
-						line-height: 0.8em;
+						font-size: 1.3em;
 						text-align: left;
-						color: #f0e7c9;
 					}
 				}
 
 				.event-detail {
+					font-size: 1.0rem;
 					margin: 15px 0 30px;
 					padding: 0 20px;
 					width: auto;
 
 					h3 {
 						margin-top: 0;
-						font-size: 1.5em;
+						font-size: 1.2em;
 					}
 
 					p {
+						font-size: 0.9em;
 						margin: 0;
 						padding: 0;
 						line-height: 1.2em;
@@ -303,12 +286,6 @@
 
 					.links {
 						margin-bottom: 0;
-
-						a,
-						a:hover,
-						a:visited {
-							font-size: 1.8em;
-						}
 					}
 				}
 			}
@@ -321,20 +298,13 @@
 
 	div.sponsors {
 		div.page-content {
+			padding: 0 !important;
 
-			.column {
-				width: 95%;
-				display: block;
-
-				&.left,
-				&.right {
-					text-align: center;
-				}
-
-				img {
-					max-width: 90%;
-					max-height: 200px;
-				}
+			a,
+			a:hover,
+			a:visited {
+				height: 90px;
+				width: 90px;
 			}
 		}
 	}

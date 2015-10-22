@@ -12,3 +12,8 @@ sitemap.xml
 wp-content/cache/
 wp-content/backups/
 sitemap.xml.gz
+.idea/
+.sass-cache
+node_modules
+*.sql
+fire_app_log.txt

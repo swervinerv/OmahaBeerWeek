@@ -213,7 +213,7 @@ function obw_events_meta () {
 	$meta_link = $custom["obw_events_link"][0];
 	$meta_sd = $custom["obw_events_startdate"][0];
 	$meta_ed = $custom["obw_events_enddate"][0];
-	$meta_st = $meta_sd;
+	$meta_st = $meta_sd;	
 	$meta_et = $meta_ed;
 	 
 	// - grab wp time format -
@@ -221,12 +221,11 @@ function obw_events_meta () {
 	$time_format = "H:i"; // get_option('time_format');
 	$time_format_h = "H";
 	$time_format_m = "i";
+	// $time_format_ms = "ii";
 	 
 	// - populate today if empty, 00:00 for time -
-	 
 	if ($meta_sd == null) {
-		// $meta_sd = time();
-		$meta_sd = strtotime('2013-02-15');
+		$meta_sd = strtotime('2015-02-13');
 		$meta_ed = $meta_sd;
 		$meta_st = 	0;
 		$meta_et = 0;
@@ -268,7 +267,8 @@ function obw_events_meta () {
 		$end_hours = 12;
 	}
 
-	$clean_st = date($time_format_m, $meta_st);
+	$start_minutes = date($time_format_m, $meta_st);
+	$end_minutes = date($time_format_m, $meta_et);
 	$clean_et = date($time_format, $meta_et);
 	 
 	// - security -
@@ -309,12 +309,19 @@ function obw_events_meta () {
 					<option value="11">11</option>
 					<option value="12">12</option>
 				</select>
+				<select id="obw_events_startdate_minute" name="obw_events_startdate_minute" class="minute">
+					<option value="00">00</option>
+					<option value="15">15</option>
+					<option value="30">30</option>
+					<option value="45">45</option>
+				</select>
 				<select id="obw_events_startdate_ampm" name="obw_events_startdate_ampm">
 					<option value="am">am</option>
 					<option value="pm">pm</option>
 				</select>
 				<input type="hidden" id="obw_events_startampm_hidden" value="<?php echo $start_ampm; ?>" />
 				<input type="hidden" id="obw_events_starthour_hidden" value="<?php echo $start_hours; ?>" />
+				<input type="hidden" id="obw_events_startminute_hidden" value="<?php echo $start_minutes; ?>" />
 			</li>
 			<li>
 				<label>Event End</label>
@@ -335,12 +342,19 @@ function obw_events_meta () {
 					<option value="11">11</option>
 					<option value="12">12</option>
 				</select>
+				<select id="obw_events_enddate_minute" name="obw_events_enddate_minute" class="minute">
+					<option value="00">00</option>
+					<option value="15">15</option>
+					<option value="30">30</option>
+					<option value="45">45</option>
+				</select>
 				<select id="obw_events_enddate_ampm" name="obw_events_enddate_ampm">
 					<option value="am">am</option>
 					<option value="pm">pm</option>
 				</select>
 				<input type="hidden" id="obw_events_endampm_hidden" value="<?php echo $end_ampm; ?>" />
 				<input type="hidden" id="obw_events_endhour_hidden" value="<?php echo $end_hours; ?>" />
+				<input type="hidden" id="obw_events_endminute_hidden" value="<?php echo $end_minutes; ?>" />
 			</li>
 			<li>
 				<label>Link to More Information</label>
@@ -387,6 +401,7 @@ function save_obw_events() {
 	endif;
 
 	$newStartTime = intval($_POST["obw_events_startdate_hour"]);
+	$newStartTimeMin = strval($_POST["obw_events_startdate_minute"]);
 
 	if (isset($_POST["obw_events_startdate_ampm"]) && $_POST["obw_events_startdate_ampm"] == "pm" && $newStartTime != 12) {
 		$newStartTime += 12;
@@ -395,7 +410,7 @@ function save_obw_events() {
 		$newStartTime = 0;
 	}
 
-	$updatestartd = strtotime( $_POST["obw_events_startdate"] . " " . strval($newStartTime) . ":00" );
+	$updatestartd = strtotime( $_POST["obw_events_startdate"] . " " . strval($newStartTime) . ":" . $newStartTimeMin);
 	update_post_meta($post->ID, "obw_events_startdate", $updatestartd );
 	update_post_meta($post->ID, "obw_events_startdate_day", date( "d", strtotime( $_POST["obw_events_startdate"] ) ) );
  
@@ -404,6 +419,7 @@ function save_obw_events() {
 	endif;
 
 	$newEndTime = $_POST["obw_events_enddate_hour"];
+	$newEndTimeMin = strval($_POST["obw_events_enddate_minute"]);
 
 	if (isset($_POST["obw_events_enddate_ampm"]) && $_POST["obw_events_enddate_ampm"] == "pm" && $newEndTime != 12) {
 		$newEndTime += 12;
@@ -412,7 +428,7 @@ function save_obw_events() {
 		$newEndTime = 0;
 	}
 
-	$updateendd = strtotime( $_POST["obw_events_enddate"] . " " . strval($newEndTime) . ":00" );
+	$updateendd = strtotime( $_POST["obw_events_enddate"] . " " . strval($newEndTime) . ":" . $newEndTimeMin );
 	update_post_meta($post->ID, "obw_events_enddate", $updateendd );
 }
 

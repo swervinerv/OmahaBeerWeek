@@ -41,12 +41,6 @@ $members = $wp_user_search->get_results();
 			</div>
 		<?php endforeach; ?>
 		</div>
-		<div class="list">
-			<span>All Members</span>
-			<?php foreach ( $members as $member ) : ?>
-			    <a href="#" data-id="<?php echo $member->ID; ?>"><?php echo get_user_meta( $member->ID, 'nickname', true ); ?></a>
-			<?php endforeach; ?>
-		</div>
 
 		<div class="clear"></div>
 	</div>
@@ -57,11 +51,11 @@ $members = $wp_user_search->get_results();
 				'left': ($('div.descriptions', 'div.bars').width()).toString() + 'px'
 			});
 
-			if ($('div.bar-info', 'div.descriptions').last().height() < ($(window).innerHeight() - $('#branding').outerHeight() - $('div.bars header').outerHeight())) {
-				$('div.bar-info', 'div.descriptions').last().css({
-					'min-height': ($(window).innerHeight() - $('#branding').outerHeight() - $('div.bars header').outerHeight()).toString() + 'px'
-				});
-			}
+			// if ($('div.bar-info', 'div.descriptions').last().height() < ($(window).innerHeight() - $('#branding').outerHeight() - $('div.bars header').outerHeight())) {
+			// 	$('div.bar-info', 'div.descriptions').last().css({
+			// 		'min-height': ($(window).innerHeight() - $('#branding').outerHeight() - $('div.bars header').outerHeight()).toString() + 'px'
+			// 	});
+			// }
 
 			$(document).bind('page_animating', function (e) {
 				$('div.list', 'div.bars').fadeOut('fast');
@@ -99,7 +93,7 @@ $members = $wp_user_search->get_results();
 	        		'scrollTop': $('#' + $(this).data('id'), 'div.bars').offset().top - $('#branding').outerHeight() - $('div.bars header').outerHeight()
 				}, 750);
 			});
-			
+
 			if (!IS_MOBILE && $(window).innerWidth() > 1024) {
 				$('div.list', 'div.bars').delay(750).fadeIn();
 			};
@@ -141,10 +135,10 @@ $members = $wp_user_search->get_results();
 			}
 
 			$(window).scroll(function () {
-				if ($(window).scrollTop() > 115) {
+				if ($(window).scrollTop() > 120) {
 					$('div.list', 'div.bars').css({
 						'position': 'fixed',
-						'top': ($('header', 'div.bars').outerHeight() - $('div.list span', 'div.bars').outerHeight()).toString() + 'px',
+						'top': ($('header', 'div.bars').outerHeight() - $('div.list span', 'div.bars').outerHeight() + 85).toString() + 'px',
 						'left': ($('div.page-content', 'div.bars').offset().left + $('div.descriptions', 'div.bars').width()).toString() + 'px'
 					})
 				}

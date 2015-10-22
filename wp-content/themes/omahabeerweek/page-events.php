@@ -49,16 +49,16 @@ $events_query = new PostsOrderedByMetaQuery($args);
 	<div id="events">
 		<?php if ( $is_mobile_device && is_null( $query_date ) ): ?>
 		<div id="events-nav">
-			<a href="#/15" data-id="15" class="event-date">FRIDAY 02.15.13</a>
-			<a href="#/16" data-id="16" class="event-date">SATURDAY 02.16.13</a>
-			<a href="#/17" data-id="17" class="event-date">SUNDAY 02.17.13</a>
-			<a href="#/18" data-id="18" class="event-date">MONDAY 02.18.13</a>
-			<a href="#/19" data-id="19" class="event-date">TUESDAY 02.19.13</a>
-			<a href="#/20" data-id="20" class="event-date">WEDNESDAY 02.20.13</a>
-			<a href="#/21" data-id="21" class="event-date">THURSDAY 02.21.13</a>
-			<a href="#/22" data-id="22" class="event-date">FRIDAY 02.22.13</a>
-			<a href="#/23" data-id="23" class="event-date">SATURDAY 02.23.13</a>
-			<a href="#/24" data-id="24" class="event-date">SUNDAY 02.24.13</a>
+			<a href="#/15" data-id="13" class="event-date">FRIDAY 02.13.15</a>
+			<a href="#/16" data-id="14" class="event-date">SATURDAY 02.14.15</a>
+			<a href="#/17" data-id="15" class="event-date">SUNDAY 02.15.15</a>
+			<a href="#/18" data-id="16" class="event-date">MONDAY 02.16.15</a>
+			<a href="#/19" data-id="17" class="event-date">TUESDAY 02.17.15</a>
+			<a href="#/20" data-id="18" class="event-date">WEDNESDAY 02.18.15</a>
+			<a href="#/21" data-id="19" class="event-date">THURSDAY 02.19.15</a>
+			<a href="#/22" data-id="20" class="event-date">FRIDAY 02.20.15</a>
+			<a href="#/23" data-id="21" class="event-date">SATURDAY 02.21.15</a>
+			<a href="#/24" data-id="22" class="event-date">SUNDAY 02.22.15</a>
 		</div>
 		<?php else: ?>
 			<?php while ($events_query->have_posts()) : $events_query->the_post(); ?>
@@ -84,35 +84,35 @@ $events_query = new PostsOrderedByMetaQuery($args);
 						echo '</header>';
 					}
 
-					$start_date = is_null($start_date) ? strtotime('02/15/2013') : strtotime(date("m/d/Y", get_post_meta($post->ID, 'obw_events_startdate', true)));
+					$start_date = is_null($start_date) ? strtotime('02/13/2015') : strtotime(date("m/d/Y", get_post_meta($post->ID, 'obw_events_startdate', true)));
 				} ?>
 
 				<?php if ( is_null( $query_date ) || get_post_meta( $post->ID, 'obw_events_startdate_day', true ) == $query_date ): ?>
 				<div class="event-detail">
 					<h3>
-						<?php echo strtoupper( get_post_meta( $post->ID, 'obw_events_location', true ) ); ?>
-						<?php if ( is_null( $query_date ) ) { echo ' - '; } else { echo '<br />'; } ?>
 						<?php echo strtoupper( $post->post_title ); ?>
+						<?php if ( is_null( $query_date ) ) { echo ' - '; } else { echo '<br />'; } ?>
+						<?php echo strtoupper( get_post_meta( $post->ID, 'obw_events_location', true ) ); ?>
 						<?php if ( !is_null( $query_author_id ) ) { echo date ( 'm/d/Y', get_post_meta( $post->ID, 'obw_events_startdate', true ) ); } ?>
 						<?php
-							$start_time = date ( 'H', get_post_meta( $post->ID, 'obw_events_startdate', true ) );
+							$start_time = date ( 'g:iA', get_post_meta( $post->ID, 'obw_events_startdate', true ) );
 
-							if (intval( $start_time ) < 12) {
-								echo ' - '.$start_time.'AM';
-							}
-							else if (intval( $start_time ) == 12){
-								echo ' - '.$start_time.'PM';
-							}
-							else {
-								echo ' - '.(string)(intval( $start_time ) - 12).'PM';
-							}
+							echo ' - '.$start_time;
+
+							// if (intval( $start_time ) < 12) {
+							// 	echo ' - '.$start_time.'AM';
+							// }
+							// else if (intval( $start_time ) == 12){
+							// 	echo ' - '.$start_time.'PM';
+							// }
+							// else {
+							// 	echo ' - '.(string)(intval( $start_time ) - 12).'PM';
+							// }
 						?>
 					</h3>
 					<?php if ( is_null( $query_author_id ) ): ?>
 					<div class="links">
-						<!-- <a href="#" class="member-events" data-author="<?php echo $post->post_author ?>" data-user-type="<?php echo get_user_meta( $post->post_author, 'user_type', true ) ?>">All Events By This Member</a> -->
 						<?php if (strlen(trim(get_userdata( $post->post_author )->user_url)) > 0) {
-							//echo '&nbsp;&nbsp;+&nbsp;&nbsp;<a href="'.get_userdata( $post->post_author )->user_url.'" target="_blank">Site</a>';
 							echo '<a href="'.get_userdata( $post->post_author )->user_url.'" target="_blank">Site</a>';
 						} ?>
 						<?php if (strlen(trim(get_user_meta( $post->post_author, 'contact', true ))) > 0) {

@@ -1,6 +1,8 @@
 @import "compass/css3";
 @import url("http://fonts.googleapis.com/css?family=Karla:400,700,700italic");
 
+
+
 //-----------------------------------------------
 // The following html5-boilerplate styles should
 // probably be customized for each site
@@ -8,7 +10,6 @@
 body, select, input, textarea {
   color: $font-color;
   // Set your base font here, to apply evenly
-  // font-family: Georgia, serif;
 }
 
 //-----------------------------------
@@ -32,7 +33,7 @@ table, caption, tbody, tfoot, thead, tr, th, td {
 	outline: 0;
 	padding: 0;
 	vertical-align: baseline;
-	color: #f0e7c9;
+	color: #ffffff;
 }
 a:focus {/* remember to define focus styles! */
 	outline: none !important;
@@ -60,7 +61,7 @@ body, html {
 	width: 100%;
 	height: 100%;
 	line-height: 1;
-	background: #f0e7c9;
+	background: #bfc13f;
 }
 
 a img {
@@ -81,7 +82,7 @@ footer, header, hgroup, menu, nav, section {
 
 body, input, textarea {
 	color: #f0e7c9;
-	font: 15pt "Helvetica Neue", Helvetica, Arial, sans-serif;
+	font: 15pt 'Open Sans', Helvetica, Arial, sans-serif;
 }
 
 /* Headings */
@@ -99,33 +100,32 @@ h2 {
 h3 {
 	margin: 50px 0px 20px;
 	font-size: 1.7em;
-	color: #3d3d3d;
 }
 
 /* Text elements */
 p {
+    color: #000000;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 0.8em;
+    line-height: 1.4em;
 	margin-bottom: 1.7em;
-	font-family: 'Karla', sans-serif;
-	font-size: 0.8em;
-	line-height: 1.4em;
 }
 ul {
 	margin: 0;
 	padding: 0;
-	font-family: 'Karla', sans-serif;
+	font-family: 'Open Sans', sans-serif;
 	font-size: 0.8em;
 	line-height: 1.4em;
 	list-style-type: none;
 }
 
 /* Links */
-a {
-	color: #f0e7c9;
-	text-decoration: none;
-}
+a,
 a:focus,
 a:active,
-a:hover {
+a:hover,
+a:visited {
+	color: #ffffff;
 	text-decoration: none;
 }
 
@@ -155,28 +155,18 @@ a:hover {
 	width: 100%;
 	min-height: 100%;
 	z-index: 1;
-
-	// &.mobile {
-	// 	position: fixed;
-	// 	left: 0;
-	// 	top: 46px;
-	// 	@include transition-property(left);
- 	//	@include transition-duration(0.5s);
-
-	// 	&.off-screen {
-	// 		left: 100%;
-	// 	}
-	// }
+	background-color: $content-background;
 
 	header {
-		position: fixed;
-		padding-top: 83px;
+        background-color: $content-background;
+		position: absolute;
+		padding-top: 13px;
 		width: 100%;
-		background: #3d3d3d;
-		font-family: 'freestyle_script_stdregular' !important;
-		font-size: 9.5em;
-		line-height: 0.85em;
-		color: #f0e7c9;
+		font-family: 'Alfa Slab One' !important;
+		font-size: 3.5em;
+        letter-spacing: 0.1em;
+		line-height: 1.85em;
+		color: #394e25;
 		text-align: center;
 		z-index: 3;
 	}
@@ -184,13 +174,13 @@ a:hover {
 	div.page-content {
 		position: relative;
 		margin: 0 auto;
-		padding: 250px 0 20px;
+		padding: 110px 0 20px;
 		width: 815px;
 		height: auto;
 		text-align: left;
 	}
-	div.page-content h1,h2,h3,h4,h5,h6 {	
-		font-family: 'heroic_condensedbold';
+	div.page-content h1,h2,h3,h4,h5,h6 {
+        font-weight: 800;
 	}
 }
 
@@ -211,7 +201,7 @@ a:hover {
 	left: 0px;
 	width: 100%;
 	height: 77px;
-	background: #f0e7c9;
+	background: #394e25;
 	z-index: 10;
 
 	nav {
@@ -228,65 +218,89 @@ a:hover {
 			margin-top: 42px;
 			padding: 0px 8px;
 			display: inline-block;
-			font-family: 'heroic_condensedmedium';
-			font-size: 1.5em;
-			color: #3d3d3d;
+			font-family: 'Open Sans';
+			font-size: 1.0em;
+            font-weight: 800;
+			color: #ffffff;
 			letter-spacing: 0.067em;
 			text-transform: uppercase;
 		}
 		a:hover,
 		a.selected {
-			color: #d9352c;
+			color: #bfc13f;
 		}
 	}
 
 	div#all-events {
 		position: absolute;
 		right: 0px;
-		top: 35px;
-		padding-left: 25px;
-		width: 190px;
-		height: 62px;
-		background: #dba137;
+		top: 40px;
+		padding-left: 20px;
+		width: 210px;
+		height: 50px;
+		background: #ffffff;
 		text-align: left;
 		overflow: hidden;
-		@include box-shadow(0px 8px 0px rgba(0, 0, 0, 0.75));
+		@include transition-property(height);
+  		@include transition-duration(0.25s);
+
+		&.open {
+			height: 305px;
+
+			a.title {
+				color: #394e25;
+			}
+			a:hover,
+			a.title:hover {
+				color: #bfc13f;
+			}
+
+			span {
+				@include rotate(180deg);
+			}
+		}
 
 		a {
+            color: #394e25;
 			margin: 0;
 			padding: 0;
-			font-family: 'Karla', sans-serif;
 			font-size: 0.75em;
 			font-style: bold;
+			font-weight: 400;
 		}
 		a.title {
-			margin-top: 10px;
-			padding: 0 8px;
+            height: 32px;
+			margin-top: 14px;
 			width: 81%;
-			font-family: 'freestyle_script_stdregular';
-			font-size: 2.0em;
-			background: transparent url('./images/events-menu-bg.png') no-repeat 135px 3px;
+			font-family: 'Alfa Slab One';
+			font-size: 1.0em;
 		}
 		a.title:hover {
-			background-position: 135px -36px;
-			color: #3d3d3d;
+			color: #bfc13f;
 		}
-		a.title.open {
-			background-position: 135px -76px;
-			color: #3d3d3d;
-		}
-		a.title.open:hover {
-			background-position: 135px -116px;	
-			color: #3d3d3d;
+
+		span {
+			position: absolute;
+			top: 11px;
+			right: 11px;
+			display: block;
+			width: 30px;
+			height: 30px;
+//			background-image: url('./images/menu-icon-light.png');
+			background-image: url('./images/menu-icon-light.svg');
+			background-size: 100% 100%;
+
+			@include transition-property(transform);
+  			@include transition-duration(0.5s);
 		}
 	}
 
 	div.logo {
 		position: absolute;
 		left: 0px;
-		top: 2px;
-		width: 215px;
-		height: 230px;
+		top: 10px;
+		width: 185px;
+		height: 185px;
 
 		a {
 			margin: 0;
@@ -295,7 +309,6 @@ a:hover {
 			height: 100%;
 			display: block;
 			background-image: url('./images/logo.png');
-			background-image: url('./images/logo.svg');
 			background-size: 100% 100%;
 		}
 	}
@@ -316,23 +329,23 @@ a:hover {
 	#celebrating {
 		margin: 0px auto;
 		width: 100%;
-		padding-top: 210px;
-		color: #f0e7c9;
+		padding-top: 230px;
 		text-align: center;
 
 		h1,
 		h2 {
-			font-family: 'freestyle_script_stdregular';
+			font-family: 'Alfa Slab One';
+            letter-spacing: 0.1em;
 		}
 		
 		h1 {
-			font-size: 9.5em;
-			@include text-shadow(0px 10px 0px rgba(0, 0, 0, 1));
+			font-size: 4.0em;
+			@include text-shadow(0px 3px 0px rgba(0, 0, 0, 1));
 		}
 		
 		h2 {
-			font-size: 4.3em;
-			@include text-shadow(0px 8px 0px rgba(0, 0, 0, 1));
+			font-size: 3.3em;
+			@include text-shadow(0px 2px 0px rgba(0, 0, 0, 1));
 			line-height: 0.8em;
 		}
 	}
@@ -347,7 +360,7 @@ a:hover {
 			margin: 0px 7px;
 			padding: 17px 20px 17px;
 			width: 100px;
-			background-color: #d9352c;
+			background-color: #ffffff;
 			vertical-align: middle;
 		}
 		
@@ -368,14 +381,14 @@ a:hover {
 		}
 		
 		a.facebook {
-			background: #f0e7c9 url('./images/facebook.png') no-repeat;
-			background-image: url('./images/facebook-icon.svg');
+			background: #ffffff url('./images/facebook.png') no-repeat;
+			background-image: url('./images/facebook.svg');
 			background-size: 100% 100%;
 		}
 		
 		a.twitter {
-			background: #f0e7c9 url('./images/twitter.png') no-repeat;
-			background-image: url('./images/twitter-icon.svg');
+			background: #ffffff url('./images/twitter.png') no-repeat;
+			background-image: url('./images/twitter.svg');
 			background-size: 100% 100%;
 		}
 	}
@@ -383,14 +396,13 @@ a:hover {
 	#countdown {
 		margin-top: 30px;
 		width: 100%;
-		font-family: 'heroic_condensedmedium', sans-serif;
-		text-shadow: 0px 4px 0px #000000;
-		filter: dropshadow(color=#000000, offx=0, offy=4);
+        @include text-shadow(0px 2px 0px rgba(0, 0, 0, 1));
 		text-align: center;
 		
 		.countdown_section {
 			padding: 0 5px 0 0;
-			font-size: 1.9em;
+			font-size: 1.4em;
+            font-weight: 400;
 			display: inline-block;
 		}
 
@@ -402,12 +414,13 @@ a:hover {
 	}
 
 	#view-events {
-		margin: 35px auto 0;
-		width: 102px;
-		height: 102px;
-		background: transparent url('./images/view-events.png') no-repeat;
+		background: transparent url('./images/menu-icon-light.svg') no-repeat;
+		background-size: 100%;
 		display: block;
+		height: 90px;
+		margin: 35px auto 0;
 		text-align: center;
+		width: 90px;
 	}
 }
 
@@ -416,11 +429,10 @@ a:hover {
 div.about {
 	height: auto;
 	min-height: 100%;
-	background: #289783;
 
 	a {
 		font-size: 1.2em;
-		color:#8cbfa6;
+		// color:#8cbfa6;
 	}
 	
 	em {
@@ -442,6 +454,10 @@ div.about {
 		display: inline-block;
 		vertical-align: top;
 
+		&.double-wide {
+			width: 66%;
+		}
+
 		h3 {
 			margin-top: 10px;
 		}
@@ -462,7 +478,6 @@ div.bars,
 div.breweries {
 	height: auto !important;
 	min-height: 100%;
-	background: #74726e;
 
 	div.descriptions {
 		float: left;
@@ -481,13 +496,11 @@ div.breweries {
 		}
 		h3 {
 			margin-bottom: 0px;
-			color: #dba137;
 			font-family: 'heroic_condensedmedium';
 			letter-spacing: 0.05em;
 		}
 		p {
 			margin: 1.0em 0;
-			color: #f0e7c9;
 		}
 	}
 
@@ -495,7 +508,7 @@ div.breweries {
 		position: absolute;
 		top: 300px;
 		padding-left: 40px;
-		width: 205px;
+		width: 207px;
 		display: none;
 
 		a,
@@ -505,7 +518,7 @@ div.breweries {
 			font-family: 'Karla', sans-serif;
 			font-weight: bold;
 			font-size: 0.8em;
-			color: #3d3d3d;
+			color: #979283;
 		}
 		
 		span {
@@ -530,16 +543,46 @@ div.bar-info {
 /* =Bus Tours
 ----------------------------------------------- */
 div.bus-tours {
-	background: #289783;
-
 	.page-content {
+		padding-top: 140px !important;
+
+		a,
+		a:hover,
+		a:visited {
+			font-size: 0.8rem;
+		}
+
+		.divider {
+			border-top: dashed 2px #000000;
+			margin-top: 20px;
+		}
+
+		strong {
+			color: #000000;
+			font-size: 0.8rem;
+			font-weight: 800;
+		}
+
 		ul {
 			padding-left: 15px;
 			list-style-type: disc;
 
 			li {
-				font-size: 1.0em;
+				color: #000000;
+				font-size: 0.8rem;
+
+				ul {
+					list-style-type: none;
+				}
 			}
+		}
+
+		.column {
+			display: inline-block;
+			margin-bottom: 25px;
+			padding: 0 1%;
+			vertical-align: top;
+			width: 47%;
 		}
 	}
 }
@@ -547,19 +590,15 @@ div.bus-tours {
 /* =Events
 ----------------------------------------------- */
 div.events {
-	background: #3d3d3d;
-
 	#events {
 		position: relative;
 		width: 100%;
 		min-height: 100%;
-		background: #3d3d3d;
 
 		section {
 			position: relative;
 			padding-top: 180px;
 			width: 100%;
-			border-bottom: solid 2px #3d3d3d;
 
 			div {
 				margin: 0 auto;
@@ -570,32 +609,32 @@ div.events {
 				position: absolute;
 				top: 0px;
 				padding: 0;
-				background: #dba137;
-				font-size: 3.8em;
+				font-size: 1.0rem;
 
 				h2,
 				h3 {
-					font-family: 'freestyle_script_stdregular';
+					color: #394e25;
+					font-family: 'Alfa Slab One';
 				}
 
 				h2 {
-					margin: 0;
-					margin-bottom: 30px;
-					line-height: 0.4em;
+					font-size: 4.0em;
+					line-height: 1.0em;
+					padding-bottom: 10px;
 				}
 
 				h3 {
+					position: relative;
 					margin: 0;
 					padding: 10px 0;
-					font-size: 1.0em;
+					z-index: 1;
 				}
 			}
 
 			.event-detail {
 				h3 {
-					margin-top: 70px;
-					margin-bottom: 0;
-					color: #979283;
+					font-size: 1.3em;
+					margin: 0;
 				}
 
 				p {
@@ -607,8 +646,6 @@ div.events {
 					a:hover,
 					a:visited {
 						margin-top: 5px;
-						font-family: 'karlabold';
-						color: #f0e7c9;
 						display: inline-block;
 						text-decoration: underline;
 					}
@@ -616,14 +653,6 @@ div.events {
 
 				.links {
 					margin-bottom: 10px;
-
-					a,
-					a:hover,
-					a:visited {
-						font-family: 'freestyle_script_stdregular';
-						color: #dba137;
-						font-size: 2.0em;
-					}
 				}
 			}
 		}
@@ -641,16 +670,14 @@ div.events {
 				h2 {
 					margin-top: 50px;
 					width: 100%;
-					font-family: 'freestyle_script_stdregular';
+//					font-family: 'freestyle_script_stdregular';
 					font-size: 13.0em;
 					line-height: 0.7em;
-					color: #f0e7c9;
 					text-align: center;
 				}
 				h3 {
 					margin-top: 0;
 					padding-top: 30px;
-					color: #f0e7c9;
 					letter-spacing: 0.0675em;
 				}
 			}
@@ -667,17 +694,16 @@ div.events {
 
 			span {
 				width: 100%;
-				background: #f0e7c9;
+				background: #ffffff;
 			}
 
 			h2,
 			h3 {
-				font-family: 'freestyle_script_stdregular';
+//				font-family: 'freestyle_script_stdregular';
 			}
 			h2 {
 				font-size: 1.2em;
 				line-height: 0.4em;
-				color: #f0e7c9;
 			}
 			h3 {
 				margin: 0;
@@ -705,7 +731,6 @@ div.events {
 				margin: 8px 0;
 				color: #3d3d3d;
 				display: inline-block;
-				font-family: 'karlabold';
 			}
 		}
 	}
@@ -714,14 +739,11 @@ div.events {
 /* =FAQ
 ----------------------------------------------- */
 div.faq {
-	background: #dba137;
-
 	a,
 	a:hover,
 	a:visited {
 		text-decoration: underline;
 		font-size: 1.0em;
-		color: #f0e7C9;
 	}
 
 	p {
@@ -732,32 +754,29 @@ div.faq {
 /* =Sponsors
 ----------------------------------------------- */
 div.sponsors {
-	background: #289783;
+	div.page-content {
+		padding: 140px 0 0 !important;
+		text-align: center !important;
 
-	div.page-content {		
+		&.no-top {
+			padding-top: 0 !important;
+		}
 
-		.column {
-			margin-top: 50px;
-			width: 49%;
+		a,
+		a:hover,
+		a:visited {
+			// background-color: #ffffff;
+			border-radius: 2px;
 			display: inline-block;
-			text-align: center;
+			height: 195px;
+			margin: 0 2px 4px;
+			width: 195px;
 
-			&.full {
-				width: 100%;
-			}
-
-			&.left {
-				text-align: left;
-			}
-
-			&.right {
-				text-align: right;
-			}
-
-			a,
-			a:hover,
-			a:visited {
-				border: none;
+			img {
+				display: block;
+				max-height: 100%;
+				max-width: 100%;
+				margin: 0 auto;
 			}
 		}
 	}
@@ -777,10 +796,9 @@ div.sponsors {
 		text-align: center;
 
 		h2 {
-			font-size: 7.5em;
-			line-height: 0.85em;
-			font-family: 'freestyle_script_stdregular' !important;
-			color: #f0e7c9;
+			font-size: 4.5em;
+			line-height: 1.85em;
+			font-family: 'Alfa Slab One' !important;
 		}
 	}
 
@@ -788,7 +806,6 @@ div.sponsors {
 		padding-top: 50px;
 		margin: 0 auto;
 		width: 815px;
-		color: #3d3d3d;
 		font-size: 2.0em;
 	}
 }

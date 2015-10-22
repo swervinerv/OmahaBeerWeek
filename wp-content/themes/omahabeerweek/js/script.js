@@ -30,7 +30,7 @@ var showEventsAuthorId = 0;
 				});
 
 				if ($('#countdown').length > 0) {
-					var austDay = new Date(2014, 1, 14);
+					var austDay = new Date(2015, 1, 13);
 					$('#countdown').countdown({
 						until: austDay,
 						layout: '<span class="countdown_section">{d<}{dn} {dl} {d>}</span> <span class="countdown_section">{hn} {hl}</span> <span class="countdown_section">{mn} {ml}</span> <span class="countdown_section">{sn} {sl}</span>'
@@ -63,22 +63,16 @@ var showEventsAuthorId = 0;
 		});
 
 		$('div#all-events a').click(function (e) {
+			var p = $(this).parent('#all-events');
+
 			e.preventDefault();
 
 			if ($(this).hasClass('title')) {
-				if ($(this).hasClass('open')) {
-					$(this).removeClass('open');
-
-					$('div#all-events').animate({
-						height: '-=230'
-					}, 250);
+				if (p.hasClass('open')) {
+					p.removeClass('open');
 				}
 				else {
-					$(this).addClass('open');
-					
-					$('div#all-events').animate({
-						height: '+=230'
-					}, 250);
+					p.addClass('open');
 				}
 
 				return;
@@ -96,10 +90,7 @@ var showEventsAuthorId = 0;
 				$.address.value('/events');
 			}
 
-			$('div#all-events a.open').removeClass('open');
-			$('div#all-events').animate({
-				height: '-=230'
-			}, 250);
+			p.removeClass('open');
 		});
 
 		if (IS_TABLET) {
@@ -303,7 +294,7 @@ var showEventsAuthorId = 0;
 		            	$('#selected-page').text(selectedPageText);
 	            	}
 	            	else {
-	            		var newTop = 0;
+	            		var newTop = $('#branding').outerHeight();;
 
 						$newContent.css({
 		            		'position': 'fixed',
@@ -315,17 +306,18 @@ var showEventsAuthorId = 0;
 
 						if (previousClassName !== 'events') {
 							$('header', 'div.' + previousClassName).css({
+								'top': 0,
 								'position': 'absolute'
 							});
 
 							$('div.' + previousClassName, "#main").animate({
-								top: -($('div.' + previousClassName, "#main").height())
+								top: -($(window).innerHeight()).toString() + 'px'
 							}, 1150);
 						}
 
-						if ($newContent.hasClass('events')) {
-							newTop = $('#branding').outerHeight();
-						}
+						// if ($newContent.hasClass('events')) {
+						// 	newTop = $('#branding').outerHeight();
+						// }
 
 						$newContent.animate({
 							top: newTop
@@ -335,13 +327,14 @@ var showEventsAuthorId = 0;
 							$('div.' + previousClassName, "#main").remove();
 
 							$('header', $(this)).css({
-								'top': '0px'
+								'top': newTop,
+								'position': 'fixed'
 							});
 
 							$(this).css({
 								'position': 'relative',
 		            			'z-index': 0
-							})
+							});
 
 							if (scrollToEvent !== 0) {
 								$('html, body').animate({
